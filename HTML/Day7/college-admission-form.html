@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>College Admission Form</title>
+</head>
+
+<body>
+    <section>
+        <div>
+            <center>
+                <h1>College Admission Form</h1>
+
+                <form>
+                    <fieldset>
+                        <legend>Student Personal Details</legend>
+
+                        <div>
+                            <label>Full Name:</label>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div><br>
+
+                        <div>
+                            <label>Father Name:</label>
+                            <input type="text" placeholder="Enter father name" required>
+                        </div><br>
+
+                        <div>
+                            <label>Mother Name:</label>
+                            <input type="text" placeholder="Enter mother name" required>
+                        </div><br>
+
+                        <div>
+                            <label>Email:</label>
+                            <input type="email" placeholder="Enter your email" required>
+                        </div><br>
+
+                        <div>
+                            <label>Phone Number:</label>
+                            <input type="tel" placeholder="Enter 10-digit phone number" maxlength="10" required>
+                        </div><br>
+
+                        <div>
+                            <label>Date of Birth:</label>
+                            <input type="date">
+                        </div><br>
+
+                        <div>
+                            <label>Gender:</label>
+                            <input type="radio" name="gender"> Male
+                            <input type="radio" name="gender"> Female
+                        </div>
+                    </fieldset>
+
+                    <br>
+
+                    <fieldset>
+                        <legend>Academic Details</legend>
+
+                        <div>
+                            <label>School Name:</label>
+                            <input type="text" placeholder="Enter school name">
+                        </div><br>
+
+                        <div>
+                            <label>12th Percentage:</label>
+                            <input type="number" placeholder="Enter percentage">
+                        </div><br>
+
+                        <div>
+                            <label>Cut Off Mark:</label>
+                            <input type="number" placeholder="Enter cutoff">
+                        </div><br>
+
+                        <div>
+                            <label>Board of Education:</label>
+                            <select>
+                                <option selected disabled>Select Board</option>
+                                <option>State Board</option>
+                                <option>CBSE</option>
+                                <option>ICSE</option>
+                            </select>
+                        </div><br>
+
+                        
+                        <div>
+                            <label>School Name:</label>
+                            <input type="text" placeholder="Enter school name">
+                        </div><br>
+
+                        <div>
+                            <label>10th Percentage:</label>
+                            <input type="number" placeholder="Enter percentage">
+                        </div><br>
+
+                        <div>
+                            <label>Board of Education:</label>
+                            <select>
+                                <option selected disabled>Select Board</option>
+                                <option>State Board</option>
+                                <option>CBSE</option>
+                                <option>ICSE</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <br>
+
+                    <fieldset>
+                        <legend>Course Selection</legend>
+
+                        <div>
+                            <label>Select Department:</label>
+                            <select required>
+                                <option selected disabled>Select Course</option>
+
+                                <optgroup label="Engineering Courses">
+                                    <option>CSE</option>
+                                    <option>ECE</option>
+                                    <option>EEE</option>
+                                    <option>MECH</option>
+                                    <option>CIVIL</option>
+                                    <option>AI & DS</option>
+                                    <option>IT</option>
+                                </optgroup>
+
+                                <optgroup label="Arts Courses">
+                                    <option>B.Com</option>
+                                    <option>BBA</option>
+                                    <option>BA English</option>
+                                    <option>B.Sc Maths</option>
+                                    <option>BCA</option>
+                                </optgroup>
+                            </select>
+                        </div><br>
+
+                       <div>
+                            <label>Hostel Required:</label>
+                            <input type="radio" name="hostel"> Yes
+                            <input type="radio" name="hostel"> No
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <label>College Bus Required:</label>
+                            <input type="radio" name="bus"> Yes
+                            <input type="radio" name="bus"> No
+                        </div>
+                    </fieldset>
+
+                    <br>
+
+                    <fieldset>
+                        <legend>Address Details</legend>
+
+                        <div>
+                            <label>Address:</label><br>
+                            <textarea rows="4" cols="30" placeholder="Enter address"></textarea>
+                        </div><br>
+
+                        <div>
+                            <label>City:</label>
+                            <input type="text" placeholder="Enter city">
+                        </div><br>
+
+                        <div>
+                            <label>State:</label>
+                            <input type="text" placeholder="Enter state">
+                        </div><br>
+
+                        <div>
+                            <label>Pincode:</label>
+                            <input type="text" placeholder="Enter pincode" minlength="6" maxlength="6" required>
+                        </div>
+                    </fieldset>
+
+                    <br>
+
+                    <div>
+                        <input type="submit" value="Apply Now">
+                        <input type="reset" value="Reset">
+                    </div>
+
+                </form>
+            </center>
+        </div>
+    </section>
+</body>
+
+</html>
