@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete HTML5 multimedia webpage example">
+    <meta name="keywords" content="HTML5, Audio, Video, iframe, Semantic Tags, Open Graph">
+    <meta name="author" content="Bala Prakash">
+
+    <meta property="og:title" content="HTML5 Complete Webpage">
+    <meta property="og:description" content="A webpage demonstrating HTML5 multimedia and semantic elements">
+    <meta property="og:image" content="../assets/images/Day8image/favicon.ico">
+    <meta property="og:url" content="https://balaprakashs.github.io/Frontend/media&metatags.html">
+
+    <title>CinePlayer Hub</title>
+
+    <link rel="icon" type="image/x-icon" href="../assets/images/Day8image/favicon.ico">
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            <img src="../assets/images/Day8image/favicon.ico" alt="Favicon" width="40">
+            CinePlayer Hub
+        </h1>
+        <p>Your ultimate destination for movies, music, videos, and multimedia entertainment.</p>
+    </header>
+
+    <hr>
+
+    <nav>
+        <a href="#audio">Audio</a> |
+        <a href="#video">Video</a> |
+        <a href="#iframe">Iframes</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <hr>
+
+    <section>
+        <article>
+            <h2>Welcome to CinePlayer Hub</h2>
+
+            <p>
+                CinePlayer Hub is a multimedia webpage created using HTML5 to demonstrate
+                various modern web elements and features.
+            </p>
+
+            <p>
+                This webpage includes audio players, video players, embedded YouTube videos,
+                Google Maps integration, semantic HTML tags, non-semantic tags, favicon,
+                meta tags, and Open Graph properties.
+            </p>
+
+            <p>
+                It showcases how multimedia content can be added to a webpage using
+                HTML5 elements such as audio, video, iframe, section, header, footer,
+                div, and span tags.
+            </p>
+
+            <p>
+                This project is designed as a simple cinema-themed multimedia website
+                to provide an engaging user experience with entertainment content.
+            </p>
+        </article>
+    </section>
+
+    <hr>
+
+    <section id="audio">
+        <h2>Music Players</h2>
+
+        <h3>Audio with Controls</h3>
+        <audio controls>
+            <source src="../assets/audio/Day8audio/1.mp3" type="audio/mpeg">
+            <source src="../assets/audio/Day8audio/1.ogg" type="audio/ogg">
+        </audio>
+
+        <h3>Autoplay Muted Loop Audio</h3>
+        <audio controls muted autoplay loop>
+            <source src="../assets/audio/Day8audio/1.mp3" type="audio/mpeg">
+            <source src="../assets/audio/Day8audio/1.ogg" type="audio/ogg">
+        </audio>
+    </section>
+
+    <hr>
+
+    <section id="video">
+        <h2>Video Players</h2>
+
+        <h3>Video with Controls</h3>
+        <video width="600" height="350" poster="../assets/images/Day8image/1.jpg" controls>
+            <source src="../assets/video/Day8video/1.mp4" type="video/mp4">
+        </video>
+
+        <h3>Autoplay Poster Video</h3>
+        <video width="600" height="350" autoplay muted loop controls>
+            <source src="../assets/video/Day8video/2.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <hr>
+
+    <section id="iframe">
+        <h2>Embedded Content</h2>
+
+        <h3>YouTube Video</h3>
+        <iframe width="600" height="350"
+            src="https://www.youtube.com/embed/TROFVicWrTE"
+            title="YouTube video player"
+            allowfullscreen>
+        </iframe>
+
+        <h3>Google Map</h3>
+        <iframe
+            src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Chennai&output=embed"
+            width="600"
+            height="350"
+            style="border:0;"
+            loading="lazy"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <hr>
+
+    <section id="contact">
+        <header>
+            <h2>Contact Us</h2>
+        </header>
+
+        <div>
+            <p><strong>CinePlayer Hub</strong></p>
+
+            <p>
+                <span>Email:</span> cineplayerhub@gmail.com
+            </p>
+
+            <p>
+                <span>Phone:</span> +91 98765 43210
+            </p>
+
+            <p>
+                <span>Location:</span> No.10, P.T. Rajan Salai, K.K. Nagar, Chennai - 600078
+            </p>
+        </div>
+    </section>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 CinePlayer Hub | Created by Bala</p>
+        <p>We are available 24/7 for multimedia support.</p>
+    </footer>
+
+</body>
+</html>
