@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete HTML5 Learning Webpage">
+    <meta name="keywords" content="HTML5, Webpage, Website, Forms, Tables, Media, Meta Tags">
+    <meta name="author" content="Bala Prakash">
+
+    <meta property="og:title" content="HTML5 Learning Webpage">
+    <meta property="og:description" content="Learn HTML5 with definitions and examples">
+    <meta property="og:image" content="../assets/images/Day9image/favicon.png">
+    <meta property="og:url" content="https://balaprakashs.github.io/Frontend/HTML5learning.html">
+
+    <title>HTML5 Learning Webpage</title>
+
+    <link rel="icon" type="image/png" href="../assets/images/Day9image/favicon.png">
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            <img src="../assets/images/Day9image/1.png" alt="HTML Logo" width="40">
+            HTML5 Learning Webpage
+        </h1>
+        <p>Learn HTML5 Topics with Definitions, Uses, Tags, Attributes and Examples</p>
+    </header>
+
+    <hr>
+
+    <nav>
+        <a href="#webpage">Webpage</a> |
+        <a href="#website">Website</a> |
+        <a href="#html">HTML</a> |
+        <a href="#tags">Tags</a> |
+        <a href="#forms">Forms</a> |
+        <a href="#table">Table</a> |
+        <a href="#media">Media</a> |
+        <a href="#iframe">Iframe</a>
+    </nav>
+
+    <hr>
+
+    <main>
+
+        <section id="webpage">
+            <div>
+                <h2>Webpage</h2>
+                <p><b>Definition:</b> A webpage is a single document displayed in a web browser.</p>
+                <p><b>Example:</b> Home page, Contact page.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="website">
+            <div>
+                <h2>Website</h2>
+                <p><b>Definition:</b> A website is a collection of webpages connected together.</p>
+
+                <table border="1">
+                    <tr>
+                        <th>Type</th>
+                        <th>Definition</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>Static Website</td>
+                        <td>Content remains same</td>
+                        <td>Portfolio Website</td>
+                    </tr>
+                    <tr>
+                        <td>Dynamic Website</td>
+                        <td>Content changes</td>
+                        <td>Amazon, Instagram</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="html">
+            <div>
+                <h2>HTML</h2>
+                <p><b>Definition:</b> HTML stands for HyperText Markup Language. It is used to create webpages.</p>
+                <p><b>Example:</b> &lt;h1&gt;Welcome&lt;/h1&gt;</p>
+
+                <h2>DOCTYPE HTML</h2>
+                <p><b>Definition:</b> It tells browser that the document uses HTML5.</p>
+                <p><b>Example:</b> &lt;!DOCTYPE html&gt;</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="tags">
+            <div>
+                <h2>Tags</h2>
+                <p><b>Definition:</b> Tags are keywords inside angle brackets.</p>
+                <p><b>Example:</b> &lt;p&gt;</p>
+
+                <h2>Elements</h2>
+                <p><b>Definition:</b> Elements contain opening tag, content and closing tag.</p>
+                <p><b>Example:</b> &lt;p&gt;Hello&lt;/p&gt;</p>
+
+                <h2>Block Level and Inline Elements</h2>
+                <p><b>Block Level:</b> Takes full width. Example: div, p, section</p>
+                <div>This is div example</div>
+
+                <p><b>Inline Level:</b> Takes only needed width. Example: span, a</p>
+                <span>This is span example</span>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <div>
+                <h2>Formatting Tags</h2>
+                <h3>Definition</h3>
+        <p>Formatting tags are HTML tags used to change the appearance of text and make content more clear and attractive.</p>
+
+                <table border="1">
+                    <tr>
+                        <th>Tag</th>
+                        <th>Use</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>b</td>
+                        <td>Bold</td>
+                        <td><b>Bold</b></td>
+                    </tr>
+                    <tr>
+                        <td>i</td>
+                        <td>Italic</td>
+                        <td><i>Italic</i></td>
+                    </tr>
+                    <tr>
+                        <td>u</td>
+                        <td>Underline</td>
+                        <td><u>Underline</u></td>
+                    </tr>
+                    <tr>
+                        <td>mark</td>
+                        <td>Highlight</td>
+                        <td><mark>Mark</mark></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <div>
+                <h2>Interactive Tags</h2>
+               
+                  <h3>Definition</h3>
+        <p>Interactive tags are HTML tags that allow users to interact with the webpage by clicking, entering data, or viewing hidden content.</p>
+                 <button>Click Here</button>
+                <details>
+                    <summary>Read More</summary>
+                    <p>Interactive example using details tag.</p>
+                </details>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <div>
+                <h2>Semantic and Non Semantic Tags</h2>
+
+        <h3>Definition</h3>
+        <p>Semantic tags clearly describe the meaning of the content, while non semantic tags do not describe the meaning of the content.</p>
+
+                <table border="1">
+                    <tr>
+                        <th>Semantic</th>
+                        <th>Non Semantic</th>
+                    </tr>
+                    <tr>
+                        <td>header</td>
+                        <td>div</td>
+                    </tr>
+                    <tr>
+                        <td>section</td>
+                        <td>span</td>
+                    </tr>
+                    <tr>
+                        <td>footer</td>
+                        <td>b</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <div>
+                <h2>Attributes</h2>
+                <h3>Definition</h3>
+        <p>Attributes provide extra information about HTML elements and help control their behavior or appearance.</p>
+
+                <table border="1">
+                    <tr>
+                        <th>Global Attributes</th>
+                        <th>Local Attributes</th>
+                    </tr>
+                    <tr>
+                        <td>id, class, title</td>
+                        <td>src, href, alt</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="forms">
+            <div>
+                <h2>Data Collection and Form Elements</h2>
+
+        <h3>Definition</h3>
+        <p>Data collection means gathering information from users using HTML forms. Form elements are used to collect different types of user input.</p>
+
+                <form>
+                    <fieldset>
+                        <legend>Student Form</legend>
+
+                        Name:<br>
+                        <input type="text"><br><br>
+
+                        Email:<br>
+                        <input type="email"><br><br>
+
+                        Password:<br>
+                        <input type="password"><br><br>
+
+                        Gender:<br>
+                        <input type="radio" name="g"> Male
+                        <input type="radio" name="g"> Female<br><br>
+
+                        Skills:<br>
+                        <input type="checkbox"> HTML
+                        <input type="checkbox"> CSS
+                        <input type="checkbox"> JavaScript<br><br>
+
+                        Course:<br>
+                        <select>
+                            <optgroup label="Frontend">
+                                <option>HTML</option>
+                                <option>CSS</option>
+                            </optgroup>
+                            <optgroup label="Backend">
+                                <option>Python</option>
+                                <option>Java</option>
+                            </optgroup>
+                        </select><br><br>
+
+                        Address:<br>
+                        <textarea rows="4" cols="30"></textarea><br><br>
+
+                        Upload File:<br>
+                        <input type="file"><br><br>
+
+                        <input type="submit">
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="table">
+          
+    <div>
+        <h2>Table and Data Projection</h2>
+
+        <h3>Definition</h3>
+        <p>Data projection means displaying information to users in a clear and organized format. Tables are used to show data in rows and columns.</p>
+
+        <h3>Table Tags</h3>
+
+        <table border="1">
+            <tr>
+                <th>Tag</th>
+                <th>Use</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td>&lt;table&gt;</td>
+                <td>Create table</td>
+                <td>Main table container</td>
+            </tr>
+            <tr>
+                <td>&lt;thead&gt;</td>
+                <td>Table heading section</td>
+                <td>Heading rows</td>
+            </tr>
+            <tr>
+                <td>&lt;tbody&gt;</td>
+                <td>Table body section</td>
+                <td>Data rows</td>
+            </tr>
+            <tr>
+                <td>&lt;tr&gt;</td>
+                <td>Create table row</td>
+                <td>One row</td>
+            </tr>
+            <tr>
+                <td>&lt;th&gt;</td>
+                <td>Table heading cell</td>
+                <td>Column title</td>
+            </tr>
+            <tr>
+                <td>&lt;td&gt;</td>
+                <td>Table data cell</td>
+                <td>Actual data</td>
+            </tr>
+        </table>
+
+        <h3>Example Student Table</h3>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Course</th>
+                    <th>Fees</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Bala</td>
+                    <td>HTML</td>
+                    <td>5000</td>
+                    <td>Chennai</td>
+                </tr>
+                <tr>
+                    <td>Arun</td>
+                    <td>Python</td>
+                    <td>8000</td>
+                    <td>Madurai</td>
+                </tr>
+                <tr>
+                    <td>Kumar</td>
+                    <td>Java</td>
+                    <td>7000</td>
+                    <td>Coimbatore</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>List Example for Data Projection</h3>
+
+        <p>Ordered List:</p>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+
+        <p>Unordered List:</p>
+        <ul>
+            <li>Frontend Development</li>
+            <li>Backend Development</li>
+            <li>Database Management</li>
+        </ul>
+    </div>
+</section>
+        <hr>
+
+        <section id="media">
+            <div>
+                <h2>Media Tags</h2>
+
+        <h3>Definition</h3>
+        <p>Media tags are HTML tags used to add images, audio, and video content to a webpage.</p>
+
+                <img src="../assets/images/Day9image/2.jpg" width="600" alt="Sample Image">
+
+                <br><br>
+                <h3>Audio</h3>
+                <audio controls>
+            <source src="../assets/audio/Day8audio/1.mp3" type="audio/mpeg">
+            <source src="../assets/audio/Day8audio/1.ogg" type="audio/ogg">
+        </audio>
+
+
+                <br><br>
+                <h3>Video</h3>
+               <video width="600" height="350" poster="../assets/images/Day8image/1.jpg" controls>
+            <source src="../assets/video/Day8video/1.mp4" type="video/mp4">
+        </video>
+                <br><br>
+            
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="iframe">
+            <div>
+                <h2>Iframe</h2>
+
+        <h3>YouTube Video</h3>
+        <iframe width="600" height="350"
+            src="https://www.youtube.com/embed/TROFVicWrTE"
+            title="YouTube video player"
+            allowfullscreen>
+        </iframe>
+                <br><br>
+
+                <iframe
+                    src="https://maps.google.com/maps?width=500&height=300&hl=en&q=Chennai&output=embed"
+                    width="600"
+                    height="350"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <hr>
+            
+        <section>
+            <div>
+                <h2>Meta Tags</h2>
+                    <h3>Definition</h3>
+                    <p>Meta tags provide information about the webpage to browsers and search engines. They are placed inside the head section of an HTML document.</p>
+
+                <table border="1">
+                    <tr>
+                        <th>Meta Tag</th>
+                        <th>Use</th>
+                    </tr>
+                    <tr>
+                        <td>charset</td>
+                        <td>Character encoding</td>
+                    </tr>
+                    <tr>
+                        <td>viewport</td>
+                        <td>Responsive webpage</td>
+                    </tr>
+                    <tr>
+                        <td>description</td>
+                        <td>Page description</td>
+                    </tr>
+                    <tr>
+                        <td>keywords</td>
+                        <td>Search keywords</td>
+                    </tr>
+                    <tr>
+                        <td>author</td>
+                        <td>Author name</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <hr>
+
+    <footer>
+        <p>&copy; 2026 HTML5 Learning Webpage | Created by Bala</p>
+    </footer>
+
+</body>
+</html>
