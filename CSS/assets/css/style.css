@@ -1,0 +1,19 @@
+#heading {
+    color: darkred;
+    text-align: center;
+    background-color: lightblue;
+    font-size: 30px;
+}
+
+#para {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+}
+
+#btn {
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border: none;
+}
