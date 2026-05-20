@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+
+    <style>
+        /* 1. Universal Selector */
+        * {
+            font-family:'Times New Roman', Times, serif;
+            background-color: lightcyan;
+            
+        }
+        h1{
+            font-size: 2em;
+        }
+        /* 2. Element Selector */
+        p {
+            color: blue;
+            background-color: lightyellow;
+            padding: 10px;
+        }
+
+        /* 3. Class Selector */
+        .box {
+            color: black;
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        /* 4. ID Selector */
+        #mainTitle {
+            color: white;
+            background-color: red;
+            padding: 10px;
+        }
+
+        /* 5. Group Selector */
+        h2, h3 {
+            color: white;
+            background-color: green;
+            padding: 10px;
+        }
+
+        /* 6. Descendant Selector */
+        div p {
+            color: black;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        /* 7. Child Selector */
+        section > p {
+            color: white;
+            background-color: purple;
+            padding: 10px;
+        }
+        #para{
+            color:chartreuse;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1 id="mainTitle">ID Selector Example</h1>
+
+    <p >Class Selector Example</p>
+
+    <p class="box" id="para">Element Selector Example</p>
+
+    <h2 style="color:red">Group Selector Example</h2>
+    
+    <h3>Another Group Selector Example</h3>
+
+    <div>
+        <p>Descendant Selector Example</p>
+    </div>
+
+    <section>
+        <p>Child Selector Example</p>
+    </section>
+
+</body>
+</html>
