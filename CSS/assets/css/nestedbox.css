@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightyellow;
+    padding: 50px;
+    font-family: sans-serif;
+}
+
+.parent-box{
+    width: 350px;
+    height: 350px;
+    background-color: navy;
+    margin: auto;
+    padding: 70px;
+    border: 10px solid black;
+}
+
+.child-box{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    line-height: 200px;
+    border: 10px solid red;
+}

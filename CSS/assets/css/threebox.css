@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightblue;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.outer-box{
+    width: 400px;
+    height: 400px;
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    margin: auto;
+    border: 20px solid black;
+}
+
+.middle-box{
+    width: 250px;
+    height: 250px;
+    background-color: purple;
+    color: white;
+    padding: 30px;
+    margin: auto;
+    border: 20px solid red;
+}
+
+.inner-box{
+    width: 120px;
+    height: 120px;
+    background-color: orange;
+    color: white;
+    margin: auto;
+    line-height: 120px;
+    border: 10px solid black;
+}
