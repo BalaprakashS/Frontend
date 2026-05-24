@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar{
+   
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px;
+    gap: 30px;
+}
+
+.logo{
+    margin-left: 40px;
+}
+
+.menu{
+    display: flex;
+    margin-right: 40px;
+    gap: 20px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.input{
+    border: none;
+    width: 790px;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: whitesmoke;
+    font-size: 12px;
+}
+
+.category{
+    display: flex;
+    gap: 40px;
+    margin-left: 55px;
+    padding: 5px;
+  
+}
+
+.offerimage{        
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px;
+}   
+
+.parentimage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding: 10px;
+   
+}
+
+.parentimage img{
+    width: 169px;
+    height: 190px;
+}
+
+
+
+.products{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    margin-right: 40px;
+   
+   
+}
+
+.card{
+    width: 270px;
+    background: white;
+    padding: 10px;
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background: #f5f5f5;
+}
+
+.tag{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: lightgray;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.card h3{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.rating{
+    color: orange;
+    font-size: 18px;
+}
+
+.card h2{
+    margin: 8px 0;
+}
+
+.mrp{
+    color: gray;
+    text-decoration: line-through;
+}
+
+.footer{
+    background-color: #3643b8;
+    color: white;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-section{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.left-section p{
+    font-size: 18px;
+    margin: 0;
+}
+
+.footer-column{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-column h3{
+    margin: 0;
+    font-size: 24px;
+}
+
+.footer-column p{
+    margin: 0;
+    font-size: 18px;
+}
+
+.bottom-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.policy-links{
+    display: flex;
+    gap: 30px;
+}
+
+.bottom-footer h2,
+.policy-links p{
+    margin: 0;
+}
+
