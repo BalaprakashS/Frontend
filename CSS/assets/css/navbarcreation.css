@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar{
+   
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px;
+    gap: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.search-box{
+    flex: 1;
+}
+
+.logo{
+    margin-left: 40px;
+}
+
+.icons{
+    display: flex;
+    gap: 30px;
+    margin-right: 40px;
+}
+
+.item{
+    text-align: center;
+    font-size: 13px;
+   
+}
+
+.item img{
+    width: 25px;
+    height: 25px;
+}
+
+.input{
+    border: none;
+    width: 100%;
+    max-width: 800px;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: whitesmoke;
+    font-size: 15px;
+}
+
+
+.category{
+    display: flex;
+    gap: 40px;
+    margin-left: 55px;
+    margin-top: 20px;
+    padding: 10px;
+  
+}
+
+.offerimage{        
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px;
+}   
+
+.parentimage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding: 10px;
+   
+}
+
+.parentimage img{
+    width: 169px;
+    height: 190px;
+}
+
+.parentimage1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.parentimage1 img{
+    width: 100%;
+    height: 350px;
+  
+}
+
+.parentimage2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.parentimage2 img{
+    width: 100%;
+    height: 300px;
+  
+}
+
+.parentimage3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    gap: 15px;
+}
+.parentimage3 img{
+    width: 100;
+    height: 370px;
+  
+}
+
+.products{
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-right: 30px;
+   
+   
+}
+
+.card{
+    width: 270px;
+    background: white;
+    padding: 10px;
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background: #f5f5f5;
+}
+
+.tag{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: lightgray;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.card h3{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.rating{
+    color: orange;
+    font-size: 18px;
+}
+
+.card h2{
+    margin: 8px 0;
+}
+
+.mrp{
+    color: gray;
+    text-decoration: line-through;
+}
+
+.footer{
+    background-color: #3643b8;
+    color: white;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-section{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.left-section p{
+    font-size: 18px;
+    margin: 0;
+}
+
+.footer-column{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-column h3{
+    margin: 0;
+    font-size: 24px;
+}
+
+.footer-column p{
+    margin: 0;
+    font-size: 18px;
+}
+
+.bottom-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.policy-links{
+    display: flex;
+    gap: 30px;
+}
+
+.bottom-footer h2,
+.policy-links p{
+    margin: 0;
+}
+
+.right-footer{
+    text-align: right;
+}
+
+.right-footer p{
+    margin: 8px 0;
+    font-size: 16px;
+}
+
