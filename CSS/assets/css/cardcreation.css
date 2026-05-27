@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: lightgrey;
+    padding-top: 50px;
+}
+
+.container{
+    width: 1400px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+}
+
+.thumbnail{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.content{
+    padding-left: 10px;
+}
+
+.content p{
+    line-height: 1.8;
+    font-size: 16px;
+    /*white-space: nowrap;*/
+}
+
+.button{
+    background-color: orange;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 120px;
+    height: 45px;
+    margin-top: 10px;
+}

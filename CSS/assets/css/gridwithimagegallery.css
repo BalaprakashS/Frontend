@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{    
+    background-color: #031b38;
+    color: white;
+    padding: 20px 60px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+
+}
+
+.nav-left{
+    display: grid;
+    grid-template-columns: 350px 100px;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-left button,
+.nav-right button{
+    background: transparent;
+    color: white;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.menu{
+    background-color: #031b38;
+    padding: 30px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    display: grid;
+    grid-template-columns: repeat(8, max-content);
+    gap: 30px;
+   
+}
+
+.menu a{
+    color: white;
+    font-size: 16px;
+    gap: 0px;
+}
+
+.course-box{
+    width: 85%;
+    background-color: #f7f7f7;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.course-box h1{
+    font-size: 22px;
+    color: #2f4157;
+    margin-bottom: 15px;
+}
+
+.course-box p{
+    font-size: 16px;
+    color: #4b5563;
+    margin-bottom: 20px;
+}
+
+.course-box h2{
+    font-size: 22px;
+    color: #2f4157;
+    margin-bottom: 15px;
+}
+
+.url a{
+    color: blue;
+    text-decoration: none;
+}
+
+.url span{
+    color: gray;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.heading{
+    padding-left: 120px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #2f4157;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 120px;
+    margin-bottom: 50px;
+    gap: 50px;
+}
+
+.gallery img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
