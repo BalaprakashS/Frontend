@@ -1,0 +1,243 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#f4f4f4;
+  padding:30px;
+}
+
+h1{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+h2{
+  margin:30px 0 20px;
+  color:#333;
+  margin-left: 50px;
+}
+
+/* ================= CARD DESIGN ================= */
+
+.card-container{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  padding: 50px;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  text-align:center;
+  transition:0.5s ease;
+}
+
+.card img{
+  width:400px;
+  height: 250px;
+  border-radius:10px;
+  transition:0.5s ease;
+}
+
+.card:hover{
+  transform:scale(1.05);
+  box-shadow:0 5px 20px gray;
+}
+
+.card:hover img{
+  transform:scale(1.1);
+}
+
+/* ================= BUTTON ================= */
+
+.btn{
+  margin-top:20px;
+  padding:12px 25px;
+  border:none;
+  background:blue;
+  color:white;
+  cursor:pointer;
+  transition:0.5s ease-in-out;
+}
+
+.btn:hover{
+  transform:scale(1.1);
+  background:darkblue;
+}
+
+.btn:active{
+  transform:scale(0.9);
+}
+
+.btn:focus{
+  background:black;
+}
+
+/* ================= PROFILE CARD ================= */
+
+.profile-card{
+  width:430px;
+  background:lightblue;
+  margin:auto;
+  text-align:center;
+  padding:40px;
+  border-radius:15px;
+  position:relative;
+  overflow:hidden;
+  transition:1s ease;
+}
+
+/* full blue background before hover */
+
+.profile-card::before{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:white;
+  top:0;
+  left:0;
+  transition:1s ease;
+  z-index:0;
+}
+
+/* full pink background after hover */
+
+.profile-card::after{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(173, 216, 230, 0.353);
+  top:0;
+  left:0;
+  transform:scale(0);
+  transition:1s ease;
+  z-index:0;
+}
+
+.profile-card:hover::after{
+  transform:scale(1);
+}
+
+.profile-card img,
+.profile-card h3,
+.profile-card p{
+  position:relative;
+  z-index:1;
+}
+
+.profile-card img{
+  width:250px;
+  height:250px;
+  border-radius:50%;
+  transition:1s ease;
+}
+
+.profile-card:hover img{
+  transform:rotate(360deg) scale(1.1);
+}
+/* ================= GALLERY ================= */
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+  
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.gallery-box{
+  position:relative;
+  overflow:hidden;
+  border-radius:10px;
+}
+
+.gallery-box img{
+  width: 440px;
+  height: 300px;
+  display:block;
+  transition:0.5s ease;
+}
+
+.gallery-box::before{
+  content:"VIEW";
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.5);
+  color:white;
+  display:grid;
+  place-items:center;
+  opacity:0;
+  transition:0.5s ease;
+  z-index:1;
+}
+
+.gallery-box:hover img{
+  transform:scale(1.2);
+}
+
+.gallery-box:hover::before{
+  opacity:1;
+}
+
+/* ================= DASHBOARD ================= */
+
+.dashboard{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+  padding: 50px;
+}
+
+.dash-card{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  position:relative;
+  transition:0.5s ease;
+}
+
+.dash-card:hover{
+  transform:translate(0,-10px);
+  box-shadow:0 10px 20px gray;
+}
+
+.dash-card h3{
+  margin-bottom:10px;
+  position:relative;
+  display:inline-block;
+}
+
+.dash-card h3::after{
+  content:"";
+  position:absolute;
+  transition:0.5s ease;
+}
+
+.dash-card:hover h3::after{
+  width:100%;
+}
+
+.dash-btn{
+  margin-top:15px;
+  padding:10px 20px;
+  border:none;
+  background:green;
+  color:white;
+  transition:0.5s linear;
+  cursor:pointer;
+}
+
+.dash-btn:hover{
+  transform:scale(1.1);
+  background:darkgreen;
+}
