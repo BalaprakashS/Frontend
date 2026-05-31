@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Concepts Handbook</title>
+    <link rel="stylesheet" href="../assets/css/cssconcepts.css">
+    <link rel="icon" type="image/png" href="../assets/images/cssconcepts/1.png">
+
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+        <h1>CSS Handbook</h1>
+        <p>Beginner CSS Concepts with Examples</p>
+    </header>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+        <ul>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#types">Types</a></li>
+            <li><a href="#selectors">Selectors</a></li>
+            <li><a href="#typography">Typography</a></li>
+            <li><a href="#boxmodel">Box Model</a></li>
+            <li><a href="#display">Display</a></li>
+            <li><a href="#flexbox">Flexbox</a></li>
+            <li><a href="#grid">Grid</a></li>
+            <li><a href="#Dashboard">Dashboard</a></li>
+            <li><a href="#units">Units</a></li>
+            <li><a href="#pseudo">Pseudo</a></li>
+            <li><a href="#transform">Transform</a></li>
+            <li><a href="#transition">Transition</a></li>
+            <li><a href="#animation">Animation</a></li>
+            <li><a href="#position">Position</a></li>
+            <li><a href="#zindex">z-index</a></li>
+           
+        </ul>
+    </nav>
+
+
+    <!-- ================= CSS INTRO ================= -->
+
+    <div class="card" id="css">
+
+        <h2>CSS (Cascading Style Sheets)</h2>
+
+        <p>
+            CSS stands for Cascading Style Sheets.
+            It is used to style and design web pages.
+            CSS controls colors, fonts, spacing,
+            layouts, responsiveness and animations.
+        </p>
+
+        <h3>Why CSS is Used?</h3>
+
+        <ul>
+            <li>Add colors to web pages</li>
+            <li>Change fonts and text styles</li>
+            <li>Create layouts</li>
+            <li>Add animations and effects</li>
+            <li>Make websites responsive</li>
+        </ul>
+
+        <h3>Example:</h3>
+
+        <div class="demo-box">
+            This box is styled using CSS.
+        </div>
+
+    </div>
+
+    <!-- ================= TYPES OF CSS ================= -->
+
+    <div class="card" id="types">
+
+        <h2>1. Inline CSS</h2>
+
+        <p>
+            Inline CSS is used to style a specific HTML element
+            using the style attribute inside the opening tag.
+            It affects only that element and has the highest priority.
+        </p>
+
+        <h3>Example:</h3>
+
+        <h1 style="background:pink;color:blue;text-align:center;padding:10px;">
+            This box uses Inline CSS.
+        </h1>
+
+        <hr>
+
+        <h2>2. Internal CSS</h2>
+
+        <p>
+            Internal CSS is written inside the style tag
+            within the head section of an HTML document.
+            It is useful when styling a single page.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="internal-css">
+            This box uses Internal CSS.
+        </div>
+
+        <hr>
+
+        <h2>3. External CSS</h2>
+
+        <p>
+            External CSS is written in a separate CSS file
+            and linked using the link tag.
+            It is the most commonly used CSS method
+            in real-time projects.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="external-css">
+            This box uses External CSS.
+        </div>
+
+        <hr>
+
+        <h2>CSS Priority</h2>
+
+        <p>
+            When multiple CSS rules are applied to the same element,
+            CSS follows a priority order.
+        </p>
+
+        <ul>
+            <li>Inline CSS (Highest)</li>
+            <li>Internal CSS</li>
+            <li>External CSS</li>
+        </ul>
+
+    </div>
+
+    <!-- ======================
+     CSS SELECTORS
+====================== -->
+
+    <div class="card" id="selectors">
+
+        <h2>CSS Selectors</h2>
+
+        <p>
+            CSS Selectors are used to target HTML elements
+            and apply styles to them.
+        </p>
+
+        <h3>Element Selector</h3>
+
+        <p>
+            Element Selector targets HTML elements using
+            their tag names.
+        </p>
+
+        <h3>Example:</h3>
+
+        <p class="selector-demo">
+            Paragraph styled using Element Selector.
+        </p>
+
+        <hr>
+
+        <h3>Class Selector</h3>
+
+        <p>
+            Class Selector is represented using a dot (.)
+            and can be reused on multiple elements.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="class-box">
+            Class Selector Example
+        </div>
+
+        <hr>
+
+        <h3>ID Selector</h3>
+
+        <p>
+            ID Selector is represented using a hash (#)
+            and is used for unique elements.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div id="id-box">
+            ID Selector Example
+        </div>
+
+        <hr>
+
+        <h3>Universal Selector (*)</h3>
+
+        <p>
+            Universal Selector targets all elements
+            on the webpage.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="demo-box">
+            All elements follow the universal selector.
+        </div>
+
+        <hr>
+
+        <h3>Child Selector (>)</h3>
+
+        <p>
+            Child Selector targets only direct child
+            elements of a parent.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="parent-box">
+            <p>Direct Child</p>
+            <section>
+                <p>Nested Child</p>
+            </section>
+        </div>
+
+        <hr>
+
+        <h3>Attribute Selector</h3>
+
+        <p>
+            Attribute Selector targets elements
+            based on their attributes.
+        </p>
+
+        <h3>Example:</h3>
+
+        <input type="text" placeholder="Enter Name">
+
+    </div>
+
+
+
+    <!-- ======================
+        TYPOGRAPHY
+    ====================== -->
+
+    <div class="card" id="typography">
+
+        <h2>Typography</h2>
+
+        <p>
+            Typography controls the appearance
+            of text on a webpage.
+        </p>
+
+        <hr>
+
+        <h3>font-family</h3>
+
+        <p>
+            Changes the font style of text.
+        </p>
+
+        <h3>Example:</h3>
+
+        <p class="font-family-demo">
+            Font Family Example
+        </p>
+
+        <hr>
+
+        <h3>font-size</h3>
+
+        <p>
+            Controls the size of text.
+        </p>
+
+        <h3>Example:</h3>
+
+        <p class="font-size-demo">
+            Font Size Example
+        </p>
+
+        <hr>
+
+        <h3>font-weight</h3>
+
+        <p>
+            Controls text thickness.
+        </p>
+
+        <h3>Example:</h3>
+
+        <p class="font-weight-demo">
+            Font Weight Example
+        </p>
+
+        <hr>
+
+        <h3>text-align</h3>
+
+        <p>
+            Aligns text horizontally.
+        </p>
+
+        <h3>Example:</h3>
+
+        <p class="text-align-demo">
+            Center Aligned Text
+        </p>
+
+        <hr>
+
+        <h3>text-transform</h3>
+
+        <p>
+            Converts text into uppercase,
+            lowercase or capitalize.
+        </p>
+
+        <h3>Example:</h3>
+
+        <p class="text-transform-demo">
+            css concepts
+        </p>
+
+    </div>
+
+    
+
+    <!-- ======================
+        COLORS
+    ====================== -->
+
+    <div class="card" id="colors">
+
+        <h2>CSS Colors</h2>
+
+        <p>
+            CSS Colors are used to change the appearance
+            of text, backgrounds and borders.
+        </p>
+
+        <hr>
+
+        <h3>RGB Color</h3>
+
+        <p>
+            RGB stands for Red, Green and Blue.
+            Values range from 0 to 255.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="rgb-box">
+            RGB Color
+        </div>
+
+        <hr>
+
+        <h3>RGBA Color</h3>
+
+        <p>
+            RGBA is similar to RGB but includes
+            Alpha (Transparency).
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="rgba-box">
+            RGBA Color
+        </div>
+
+        <hr>
+
+        <h3>HEX Color</h3>
+
+        <p>
+            HEX uses hexadecimal values to represent colors.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="hex-box">
+            HEX Color
+        </div>
+
+    </div>
+
+    <!-- ======================
+     BOX MODEL
+    ====================== -->
+
+    <div class="card" id="boxmodel">
+
+        <h2>CSS Box Model</h2>
+
+        <p>
+            The CSS Box Model describes how every HTML element
+            is structured. It consists of Content, Padding,
+            Border and Margin.
+        </p>
+
+        <h3>Content</h3>
+
+        <p>
+            Content is the actual text, image or data
+            displayed inside an element.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="content-box">
+            Content Area
+        </div>
+
+        <hr>
+
+        <h3>Padding</h3>
+
+        <p>
+            Padding is the space between content
+            and border.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="padding-box">
+            Padding Example
+        </div>
+
+        <hr>
+
+        <h3>Border</h3>
+
+        <p>
+            Border surrounds the content and padding.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="border-box">
+            Border Example
+        </div>
+
+        <hr>
+
+        <h3>Margin</h3>
+
+        <p>
+            Margin creates space outside the border.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="margin-container">
+
+            <div class="margin-box">
+                Margin Example
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ======================
+        DISPLAY
+    ====================== -->
+
+    <div class="card" id="display">
+
+        <h2>Display Property</h2>
+
+        <p>
+            Display property controls how elements
+            appear on the webpage.
+        </p>
+
+        <hr>
+
+        <h3>Block Element</h3>
+
+        <p>
+            Block elements take full available width
+            and start on a new line.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="block-demo">
+            Block Element
+        </div>
+
+        <hr>
+
+        <h3>Inline Element</h3>
+
+        <p>
+            Inline elements only take the width
+            required by their content.
+        </p>
+
+        <h3>Example:</h3>
+
+        <span class="inline-demo">
+            Inline Element
+        </span>
+
+        <hr>
+
+        <h3>Inline-Block Element</h3>
+
+        <p>
+            Inline-block elements stay inline
+            while supporting width and height.
+        </p>
+
+        <h3>Example:</h3>
+
+        <span class="inline-block-demo">
+            Inline Block
+        </span>
+
+        <hr>
+
+        <h3>Display None</h3>
+
+        <p>
+            Display none completely hides an element.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="hidden-box">
+            Hidden Box
+        </div>
+
+    </div>
+
+    
+    <!-- ======================
+        FLEXBOX
+    ====================== -->
+
+    <div class="card" id="flexbox">
+
+        <h2>Flexbox</h2>
+
+        <p>
+            Flexbox is a one-dimensional layout system used
+            to align and distribute items efficiently inside
+            a container.
+        </p>
+
+        <h3>Why Flexbox is Used?</h3>
+
+        <ul>
+            <li>Easy horizontal alignment</li>
+            <li>Easy vertical alignment</li>
+            <li>Responsive layouts</li>
+            <li>Equal spacing between items</li>
+        </ul>
+
+        <hr>
+
+        <h3>display:flex</h3>
+
+        <p>
+            Converts a normal container into a flex container.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="flex-demo">
+
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+
+        </div>
+
+        <hr>
+
+        <h3>justify-content</h3>
+
+        <p>
+            justify-content aligns items horizontally
+            along the main axis.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="justify-demo">
+
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+
+        </div>
+
+        <hr>
+
+        <h3>align-items</h3>
+
+        <p>
+            align-items aligns items vertically
+            along the cross axis.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="align-demo">
+
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+
+        </div>
+
+        <hr>
+
+        <h3>gap</h3>
+
+        <p>
+            gap creates spacing between flex items.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="gap-demo">
+
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+
+        </div>
+
+        <hr>
+
+        <h3>flex-wrap</h3>
+
+        <p>
+            flex-wrap allows items to move onto
+            the next row when necessary.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="wrap-demo">
+
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ======================
+        FLEXBOX INTERVIEW
+    ====================== -->
+
+    <div class="card">
+
+        <h2>Difference Between justify-content and align-items</h2>
+
+        <table class="table">
+
+            <tr>
+                <th>justify-content</th>
+                <th>align-items</th>
+            </tr>
+
+            <tr>
+                <td>Works Horizontally</td>
+                <td>Works Vertically</td>
+            </tr>
+
+            <tr>
+                <td>Main Axis</td>
+                <td>Cross Axis</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <!-- ======================
+        CSS GRID
+    ====================== -->
+
+    <div class="card" id="grid">
+
+        <h2>CSS Grid</h2>
+
+        <p>
+            CSS Grid is a two-dimensional layout system
+            that works with both rows and columns.
+        </p>
+
+        <h3>Why Grid is Used?</h3>
+
+        <ul>
+            <li>Create complex layouts</li>
+            <li>Responsive design</li>
+            <li>Row and Column control</li>
+            <li>Dashboard layouts</li>
+        </ul>
+
+        <hr>
+
+        <h3>display:grid</h3>
+
+        <p>
+            Converts a container into a grid container.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="grid-demo">
+
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+
+        </div>
+
+        <hr>
+
+        <h3>grid-template-columns</h3>
+
+        <p>
+            Defines the number and size
+            of columns.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="column-demo">
+
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+
+        </div>
+
+        <hr>
+
+        <h3>grid-template-rows</h3>
+
+        <p>
+            Defines the height of rows.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="row-demo">
+
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+
+        </div>
+
+        <hr>
+
+        <h3>gap</h3>
+
+        <p>
+            gap creates spacing between rows
+            and columns.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="grid-gap-demo">
+
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+
+        </div>
+
+        <hr>
+
+        <h3>grid-column</h3>
+
+        <p>
+            Allows an item to span multiple columns.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="column-span">
+
+            <div class="span-item">
+                Span 2 Columns
+            </div>
+
+            <div>2</div>
+            <div>3</div>
+
+        </div>
+
+    </div>
+
+    
+    <!-- ================= DASHBOARD ================= -->
+
+    <div class="card" id="Dashboard">
+
+        <h2>Dashboard</h2>
+
+        <section class="dashboard">
+
+        <div class="dash-card">
+            <h3>40+</h3>
+            <p>CSS Topics</p>
+        </div>
+
+        <div class="dash-card">
+            <h3>100+</h3>
+            <p>Examples</p>
+        </div>
+
+        <div class="dash-card">
+            <h3>Beginner</h3>
+            <p>Friendly</p>
+        </div>
+
+        <div class="dash-card">
+            <h3>Responsive</h3>
+            <p>Design</p>
+        </div>
+
+    </section>
+    </div>
+
+
+    <!-- ======================
+        UNITS
+    ====================== -->
+
+    <div class="card" id="units">
+
+        <h2>CSS Units</h2>
+
+        <p>
+            CSS Units define measurements
+            for elements and text.
+        </p>
+
+        <hr>
+
+        <h3>px (Pixel)</h3>
+
+        <p>
+            Fixed size unit.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="px-box">
+            200px Width
+        </div>
+
+        <hr>
+
+        <h3>% (Percentage)</h3>
+
+        <p>
+            Relative to parent element.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="percent-parent">
+
+            <div class="percent-box">
+                50%
+            </div>
+
+        </div>
+
+        <hr>
+
+        <h3>em Unit</h3>
+
+        <p>
+            Relative to parent font size.
+        </p>
+
+        <h3>Example:</h3>
+
+        <p class="em-demo">
+            2em Text
+        </p>
+
+        <hr>
+
+        <h3>rem Unit</h3>
+
+        <p>
+            Relative to root font size.
+        </p>
+
+        <h3>Example:</h3>
+
+        <p class="rem-demo">
+            2rem Text
+        </p>
+
+    </div>
+
+
+    <!-- ======================
+        WIDTH & HEIGHT
+    ====================== -->
+
+    <div class="card">
+
+        <h2>Width and Height</h2>
+
+        <p>
+            Width and Height properties define
+            the dimensions of an element.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="size-box">
+            Width 250px <br>
+            Height 120px
+        </div>
+
+    </div>
+
+    <!-- ======================
+        PSEUDO ELEMENTS
+    ====================== -->
+
+    <div class="card" id="pseudo">
+
+        <h2>Pseudo Elements</h2>
+
+        <p>
+            Pseudo Elements allow styling
+            specific parts of an element.
+        </p>
+
+        <hr>
+
+        <h3>::before</h3>
+
+        <p>
+            Inserts content before an element.
+        </p>
+
+        <h3>Example:</h3>
+
+        <p class="before-demo">
+            Before Example
+        </p>
+
+        <hr>
+
+        <h3>::after</h3>
+
+        <p>
+            Inserts content after an element.
+        </p>
+
+        <h3>Example:</h3>
+
+        <p class="after-demo">
+            After Example
+        </p>
+
+        <hr>
+
+        <h3>::first-letter</h3>
+
+        <p>
+            Styles the first letter
+            of a text.
+        </p>
+
+        <h3>Example:</h3>
+
+        <p class="letter-demo">
+            CSS Concepts Project
+        </p>
+
+        <hr>
+
+        <h3>::selection</h3>
+
+        <p>
+            Styles selected text.
+        </p>
+
+        <h3>Example:</h3>
+
+        <p class="selection-demo">
+            Select this text using your mouse.
+        </p>
+
+    </div>
+
+
+    <!-- ======================
+        TRANSFORM
+    ====================== -->
+
+    <div class="card" id="transform">
+
+        <h2>Transform</h2>
+
+        <p>
+            Transform allows moving,
+            rotating, scaling and skewing
+            elements.
+        </p>
+
+        <hr>
+
+        <h3>scale()</h3>
+
+        <p>
+            Enlarges or shrinks an element.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="scale-box">
+            Scale
+        </div>
+
+        <hr>
+
+        <h3>rotate()</h3>
+
+        <p>
+            Rotates an element.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="rotate-box">
+            Rotate
+        </div>
+
+        <hr>
+
+        <h3>translate()</h3>
+
+        <p>
+            Moves an element from
+            its current position.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="translate-box">
+            Translate
+        </div>
+
+    </div>
+
+
+    <!-- ======================
+        TRANSITION
+    ====================== -->
+
+    <div class="card" id="transition">
+
+        <h2>Transition</h2>
+
+        <p>
+            Transition creates smooth
+            animations between two states.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="transition-box">
+            Hover Me
+        </div>
+
+    </div>
+
+
+    <!-- ======================
+        ANIMATION
+    ====================== -->
+
+    <div class="card" id="animation">
+
+        <h2>Animation</h2>
+
+        <p>
+            Animation allows elements
+            to move and change styles
+            automatically using keyframes.
+        </p>
+
+        <hr>
+
+        <h3>@keyframes</h3>
+
+        <p>
+            Defines animation steps.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="animation-box"></div>
+
+    </div>
+
+    
+
+    <!-- ======================
+        POSITION
+    ====================== -->
+
+    <div class="card" id="position">
+
+        <h2>CSS Position</h2>
+
+        <p>
+            Position property controls where
+            elements appear on a webpage.
+        </p>
+
+        <hr>
+
+        <h3>Relative Position</h3>
+
+        <p>
+            Relative positioning moves an element
+            relative to its normal position.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="relative-demo">
+            Relative Element
+        </div>
+
+        <hr>
+
+        <h3>Absolute Position</h3>
+
+        <p>
+            Absolute positioning places an element
+            relative to its nearest positioned parent.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="absolute-parent">
+
+            Parent
+
+            <div class="absolute-demo">
+                Absolute
+            </div>
+
+        </div>
+
+        <hr>
+
+        <h3>Fixed Position</h3>
+
+        <p>
+            Fixed positioning stays in the same place
+            even while scrolling.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="fixed-demo">
+            Fixed
+        </div>
+
+        <hr>
+
+        <h3>Sticky Position</h3>
+
+        <p>
+            Sticky positioning behaves like relative
+            until a scroll position is reached.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="sticky-demo">
+            Sticky Example
+        </div>
+
+    </div>
+
+
+    <!-- ======================
+        Z INDEX
+    ====================== -->
+
+    <div class="card" id="zindex">
+
+        <h2>z-index</h2>
+
+        <p>
+            z-index controls the stacking order
+            of positioned elements.
+        </p>
+
+        <p>
+            Higher z-index values appear above
+            lower values.
+        </p>
+
+        <h3>Example:</h3>
+
+        <div class="z-container">
+
+            <div class="z-box-one">
+                1
+            </div>
+
+            <div class="z-box-two">
+                2
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+
+        <h2>CSS Basic Concepts</h2>
+
+        <p>
+            Beginner CSS Topics
+        </p>
+
+    </footer>
+
+
+
+</body>
+</html>

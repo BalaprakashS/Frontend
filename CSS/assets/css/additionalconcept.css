@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    line-height:1.6;
+}
+
+/* ======================
+   CSS VARIABLES
+====================== */
+
+:root{
+    --main-color:navy;
+}
+
+.variable-box{
+    background:var(--main-color);
+    color:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+/* ======================
+   MEDIA QUERY DEMO
+====================== */
+
+.media-box{
+    background:tomato;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+@media(max-width:768px){
+
+    .media-box{
+        background:green;
+    }
+
+}
+
+/* ======================
+   OVERFLOW
+====================== */
+
+.overflow-box{
+    width:300px;
+    height:120px;
+    overflow:auto;
+    background:#eee;
+    padding:15px;
+}
+
+/* ======================
+   OPACITY
+====================== */
+
+.opacity-box{
+    background:red;
+    color:white;
+    padding:20px;
+    opacity:0.5;
+}
+
+/* ======================
+   BOX SHADOW
+====================== */
+
+.shadow-box{
+    background:white;
+    padding:30px;
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+
+/* ======================
+   TEXT SHADOW
+====================== */
+
+.text-shadow-demo{
+    text-shadow:3px 3px 5px gray;
+}
+
+/* ======================
+   GRADIENT
+====================== */
+
+.gradient-box{
+    height:150px;
+    border-radius:10px;
+    background:linear-gradient(
+        to right,
+        navy,
+        purple,
+        crimson
+    );
+}
+
+/* ======================
+   OBJECT FIT
+====================== */
+
+.object-fit-demo{
+    width:300px;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* ======================
+   CURSOR
+====================== */
+
+.cursor-btn{
+    padding:15px 30px;
+    cursor:pointer;
+}
+
+/* ======================
+   FILTER
+====================== */
+
+.filter-demo{
+    width:300px;
+    filter:grayscale(100%);
+}
+
+/* ======================
+   VIEWPORT
+====================== */
+
+.viewport-box{
+    width:50vw;
+    background:teal;
+    color:white;
+    padding:20px;
+}
+
+/* ======================
+   CALC
+====================== */
+
+.calc-box{
+    width:calc(100% - 100px);
+    background:orange;
+    padding:20px;
+}
+
+/* ======================
+   CLAMP
+====================== */
+
+.clamp-demo{
+    font-size:clamp(
+        20px,
+        5vw,
+        50px
+    );
+}
+
+/* ======================
+   FOOTER
+====================== */
+
+footer{
+    background:navy;
+    color:white;
+    text-align:center;
+    padding:40px;
+    margin-top:30px;
+}

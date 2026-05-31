@@ -1,0 +1,764 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    line-height:1.6;
+}
+
+/* ======================
+   HEADER
+====================== */
+
+header{
+    background:navy;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+/* ======================
+   NAVBAR
+====================== */
+
+nav{
+    background:#111;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+    list-style:none;
+    padding:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    padding:8px 12px;
+    border-radius:5px;
+}
+
+nav a:hover{
+    background:navy;
+}
+
+/* ======================
+   DASHBOARD
+====================== */
+
+.dashboard{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    margin:20px;
+}
+
+.dash-card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.dash-card h3{
+    color:navy;
+    font-size:28px;
+}
+
+/* ======================
+   CARD
+====================== */
+
+.card{
+    background:white;
+    margin:20px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    color:navy;
+    margin-bottom:10px;
+}
+
+.card h3{
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+.card ul{
+    margin-left:20px;
+}
+
+.card hr{
+    margin:20px 0;
+}
+
+/* ======================
+   DEMO BOX
+====================== */
+
+.demo-box{
+    background:lightblue;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.internal-css{
+    background:lightgreen;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.external-css{
+    background:lightcoral;
+    color:white;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+}
+
+/* ======================
+   MOBILE
+====================== */
+
+@media(max-width:768px){
+
+    nav ul{
+        flex-direction:column;
+        align-items:center;
+    }
+
+}
+
+/* ======================
+   SELECTORS
+====================== */
+
+.selector-demo{
+    color:crimson;
+}
+
+.class-box{
+    background:lightgreen;
+    padding:15px;
+    border-radius:10px;
+}
+
+#id-box{
+    background:gold;
+    padding:15px;
+    border-radius:10px;
+}
+
+.parent-box{
+    background:#eee;
+    padding:15px;
+    border-radius:10px;
+}
+
+.parent-box > p{
+    color:red;
+    font-weight:bold;
+}
+
+input{
+    padding:10px;
+    width:250px;
+    border:1px solid #ccc;
+}
+
+/* ======================
+   COLORS
+====================== */
+
+.rgb-box{
+    background:rgb(255,0,0);
+    color:white;
+    padding:15px;
+    border-radius:10px;
+}
+
+.rgba-box{
+    background:rgba(0,0,255,0.5);
+    color:white;
+    padding:15px;
+    border-radius:10px;
+}
+
+.hex-box{
+    background:#008000;
+    color:white;
+    padding:15px;
+    border-radius:10px;
+}
+
+/* ======================
+   TYPOGRAPHY
+====================== */
+
+.font-family-demo{
+    font-family:cursive;
+}
+
+.font-size-demo{
+    font-size:30px;
+}
+
+.font-weight-demo{
+    font-weight:bold;
+}
+
+.text-align-demo{
+    text-align:center;
+    background:#eee;
+    padding:10px;
+}
+
+.text-transform-demo{
+    text-transform:uppercase;
+}
+
+/* ======================
+   UNITS
+====================== */
+
+.px-box{
+    width:200px;
+    background:tomato;
+    color:white;
+    padding:15px;
+    text-align:center;
+}
+
+.percent-parent{
+    width:100%;
+    background:#ddd;
+    padding:10px;
+}
+
+.percent-box{
+    width:50%;
+    background:navy;
+    color:white;
+    padding:15px;
+    text-align:center;
+}
+
+.em-demo{
+    font-size:2em;
+}
+
+.rem-demo{
+    font-size:2rem;
+}
+
+/* ======================
+   BOX MODEL
+====================== */
+
+.content-box{
+    background:lightblue;
+    padding:15px;
+    border-radius:10px;
+}
+
+.padding-box{
+    background:lightgreen;
+    padding:40px;
+    border-radius:10px;
+}
+
+.border-box{
+    border:5px solid navy;
+    padding:20px;
+    border-radius:10px;
+}
+
+.margin-container{
+    background:#eee;
+    padding:20px;
+}
+
+.margin-box{
+    margin:40px;
+    background:tomato;
+    color:white;
+    padding:20px;
+}
+
+/* ======================
+   WIDTH HEIGHT
+====================== */
+
+.size-box{
+    width:250px;
+    height:120px;
+    background:purple;
+    color:white;
+    text-align:center;
+    padding-top:35px;
+    border-radius:10px;
+}
+
+/* ======================
+   DISPLAY
+====================== */
+
+.block-demo{
+    display:block;
+    background:navy;
+    color:white;
+    padding:15px;
+}
+
+.inline-demo{
+    display:inline;
+    background:orange;
+    padding:10px;
+}
+
+.inline-block-demo{
+    display:inline-block;
+    width:200px;
+    height:60px;
+    background:green;
+    color:white;
+    text-align:center;
+    line-height:60px;
+}
+
+.hidden-box{
+    display:none;
+}
+
+/* ======================
+   POSITION
+====================== */
+
+.relative-demo{
+    position:relative;
+    left:30px;
+    background:skyblue;
+    padding:20px;
+    width:200px;
+}
+
+.absolute-parent{
+    position:relative;
+    height:150px;
+    background:#ddd;
+    padding:20px;
+}
+
+.absolute-demo{
+    position:absolute;
+    top:20px;
+    right:20px;
+    background:red;
+    color:white;
+    padding:15px;
+}
+
+.fixed-demo{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:navy;
+    color:white;
+    padding:10px;
+    border-radius:10px;
+}
+
+.sticky-demo{
+    position:sticky;
+    top:10px;
+    background:orange;
+    padding:15px;
+}
+
+/* ======================
+   Z INDEX
+====================== */
+
+.z-container{
+    position:relative;
+    height:180px;
+}
+
+.z-box-one{
+    width:120px;
+    height:120px;
+    background:red;
+    position:absolute;
+    left:20px;
+    top:20px;
+    z-index:1;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.z-box-two{
+    width:120px;
+    height:120px;
+    background:blue;
+    position:absolute;
+    left:80px;
+    top:60px;
+    z-index:2;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* ======================
+   FLEXBOX
+====================== */
+
+.flex-demo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+}
+
+.flex-demo div{
+    width:80px;
+    height:80px;
+    background:navy;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.justify-demo{
+    display:flex;
+    justify-content:space-between;
+    background:#eee;
+    padding:20px;
+}
+
+.justify-demo div{
+    width:60px;
+    height:60px;
+    background:tomato;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.align-demo{
+    display:flex;
+    align-items:center;
+    height:200px;
+    background:#eee;
+    gap:10px;
+}
+
+.align-demo div{
+    width:60px;
+    height:60px;
+    background:green;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.gap-demo{
+    display:flex;
+    gap:30px;
+}
+
+.gap-demo div{
+    background:purple;
+    color:white;
+    padding:20px;
+}
+
+.wrap-demo{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.wrap-demo div{
+    width:150px;
+    background:orange;
+    padding:20px;
+    text-align:center;
+}
+
+/* ======================
+   TABLE
+====================== */
+
+.table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.table th,
+.table td{
+    border:1px solid #ccc;
+    padding:10px;
+    text-align:center;
+}
+
+.table th{
+    background:navy;
+    color:white;
+}
+
+/* ======================
+   GRID
+====================== */
+
+.grid-demo{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.grid-demo div{
+    background:crimson;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.column-demo{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:10px;
+}
+
+.column-demo div{
+    background:teal;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.row-demo{
+    display:grid;
+    grid-template-rows:100px 100px 100px;
+    gap:10px;
+}
+
+.row-demo div{
+    background:purple;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.grid-gap-demo{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.grid-gap-demo div{
+    background:orange;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.column-span{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+}
+
+.column-span div{
+    background:navy;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.span-item{
+    grid-column:1 / 3;
+}
+
+/* ======================
+   PSEUDO CLASSES
+====================== */
+
+.hover-btn{
+    padding:15px 25px;
+    border:none;
+    background:navy;
+    color:white;
+    cursor:pointer;
+}
+
+.hover-btn:hover{
+    background:crimson;
+}
+
+.active-btn{
+    padding:15px 25px;
+    border:none;
+    background:green;
+    color:white;
+    cursor:pointer;
+}
+
+.active-btn:active{
+    background:red;
+}
+
+.first-demo li:first-child{
+    color:red;
+    font-weight:bold;
+}
+
+.last-demo li:last-child{
+    color:blue;
+    font-weight:bold;
+}
+
+.nth-demo li:nth-child(2){
+    color:green;
+    font-weight:bold;
+}
+
+/* ======================
+   PSEUDO ELEMENTS
+====================== */
+
+.before-demo::before{
+    content:"★ ";
+    color:gold;
+}
+
+.after-demo::after{
+    content:" ✔";
+    color:green;
+}
+
+.letter-demo::first-letter{
+    font-size:40px;
+    color:red;
+}
+
+.selection-demo::selection{
+    background:navy;
+    color:white;
+}
+
+/* ======================
+   TRANSFORM
+====================== */
+
+.scale-box{
+    width:120px;
+    padding:20px;
+    background:orange;
+    transform:scale(1.2);
+    text-align:center;
+}
+
+.rotate-box{
+    width:120px;
+    padding:20px;
+    background:purple;
+    color:white;
+    transform:rotate(10deg);
+    text-align:center;
+}
+
+.translate-box{
+    width:120px;
+    padding:20px;
+    background:teal;
+    color:white;
+    transform:translateX(50px);
+    text-align:center;
+}
+
+/* ======================
+   TRANSITION
+====================== */
+
+.transition-box{
+    width:150px;
+    padding:20px;
+    background:skyblue;
+    text-align:center;
+    transition:0.5s;
+}
+
+.transition-box:hover{
+    background:navy;
+    color:white;
+    transform:scale(1.1);
+}
+
+/* ======================
+   ANIMATION
+====================== */
+
+.animation-box{
+    width:120px;
+    height:120px;
+    background:red;
+    border-radius:50%;
+    animation:moveBall 3s infinite;
+}
+
+@keyframes moveBall{
+
+    0%{
+        transform:translateX(0);
+    }
+
+    50%{
+        transform:translateX(300px);
+    }
+
+    100%{
+        transform:translateX(0);
+    }
+
+}
+
+
+/* ======================
+   FOOTER
+====================== */
+
+footer{
+    background:navy;
+    color:white;
+    text-align:center;
+    padding:40px;
+    margin-top:30px;
+}
