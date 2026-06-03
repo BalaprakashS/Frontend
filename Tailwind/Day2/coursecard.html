@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Assignment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between">
+            <h1 class="text-2xl font-bold">Tech Academy</h1>
+
+            <ul class="flex gap-6">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="text-center py-20 bg-white">
+        <h1 class="text-5xl font-bold mb-4">
+            Learn & Grow With Us
+        </h1>
+
+        <p class="text-gray-600 mb-6">
+            Explore top courses and manage your learning journey.
+        </p>
+
+        <button class="bg-blue-600 text-white px-6 py-3 rounded-lg">
+            Get Started
+        </button>
+    </section>
+
+    <!-- About -->
+    <section class="container mx-auto py-16 px-6">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+            <img
+                src="../assets/image/d.png"
+                class="rounded-lg shadow">
+
+            <div>
+                <h2 class="text-3xl font-bold mb-4">
+                    About Us
+                </h2>
+
+                <p class="text-gray-600">
+                    We provide industry-ready courses with expert trainers and practical learning experiences.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="bg-white py-16">
+        <h2 class="text-3xl font-bold text-center mb-10">
+            Our Services
+        </h2>
+
+        <div class="container mx-auto grid md:grid-cols-3 gap-6 px-6">
+
+            <div class="bg-gray-100 p-6 rounded-lg shadow">
+                <h3 class="text-xl font-bold mb-3">Web Development</h3>
+                <p>Modern web application development.</p>
+            </div>
+
+            <div class="bg-gray-100 p-6 rounded-lg shadow">
+                <h3 class="text-xl font-bold mb-3">UI/UX Design</h3>
+                <p>Beautiful and responsive interfaces.</p>
+            </div>
+
+            <div class="bg-gray-100 p-6 rounded-lg shadow">
+                <h3 class="text-xl font-bold mb-3">Digital Marketing</h3>
+                <p>Boost your online presence.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Course Cards -->
+    <section class="container mx-auto py-16 px-6">
+
+    <h2 class="text-4xl font-bold text-center mb-10">
+        Popular Courses
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+        <!-- Card 1 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+            <img src="../assets/image/Fullstack.png"
+                class="w-full h-52 object-contain bg-white">
+
+            <div class="p-4 flex flex-col flex-grow">
+                <h3 class="font-bold text-xl">Full Stack Development</h3>
+                <p class="mt-2">Trainer : John</p>
+                <p class="text-green-600 font-bold my-3">₹2999</p>
+
+                <button class="bg-blue-600 text-white px-4 py-2 rounded w-fit mt-auto hover:bg-blue-700">
+                    Enroll
+                </button>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+            <img src="../assets/image/react-logo.png"
+                class="w-full h-52 object-contain bg-white">
+
+            <div class="p-4 flex flex-col flex-grow">
+                <h3 class="font-bold text-xl">React JS</h3>
+                <p class="mt-2">Trainer : David</p>
+                <p class="text-green-600 font-bold my-3">₹1999</p>
+
+                <button class="bg-blue-600 text-white px-4 py-2 rounded w-fit mt-auto hover:bg-blue-700">
+                    Enroll
+                </button>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+            <img src="../assets/image/py.webp"
+                class="w-full h-52 object-contain bg-white">
+
+            <div class="p-4 flex flex-col flex-grow">
+                <h3 class="font-bold text-xl">Python</h3>
+                <p class="mt-2">Trainer : Smith</p>
+                <p class="text-green-600 font-bold my-3">₹2499</p>
+
+                <button class="bg-blue-600 text-white px-4 py-2 rounded w-fit mt-auto hover:bg-blue-700">
+                    Enroll
+                </button>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+            <img src="../assets/image/java.jpg"
+                class="w-full h-52 object-contain bg-white">
+
+            <div class="p-4 flex flex-col flex-grow">
+                <h3 class="font-bold text-xl">Java</h3>
+                <p class="mt-2">Trainer : Alex</p>
+                <p class="text-green-600 font-bold my-3">₹2799</p>
+
+                <button class="bg-blue-600 text-white px-4 py-2 rounded w-fit mt-auto hover:bg-blue-700">
+                    Enroll
+                </button>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+            <img src="../assets/image/node-js.png"
+                class="w-full h-52 object-contain bg-white">
+
+            <div class="p-4 flex flex-col flex-grow">
+                <h3 class="font-bold text-xl">Node JS</h3>
+                <p class="mt-2">Trainer : Kevin</p>
+                <p class="text-green-600 font-bold my-3">₹2999</p>
+
+                <button class="bg-blue-600 text-white px-4 py-2 rounded w-fit mt-auto hover:bg-blue-700">
+                    Enroll
+                </button>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+            <img src="../assets/image/ui.png"
+                class="w-full h-52 object-contain bg-white">
+
+            <div class="p-4 flex flex-col flex-grow">
+                <h3 class="font-bold text-xl">UI/UX Design</h3>
+                <p class="mt-2">Trainer : Sarah</p>
+                <p class="text-green-600 font-bold my-3">₹1899</p>
+
+                <button class="bg-blue-600 text-white px-4 py-2 rounded w-fit mt-auto hover:bg-blue-700">
+                    Enroll
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- Dashboard -->
+    <section class="py-16 bg-white">
+
+        <h2 class="text-3xl font-bold text-center mb-10">
+            Admin Dashboard
+        </h2>
+
+        <div class="container mx-auto flex flex-col lg:flex-row">
+        <!-- Sidebar -->
+        <div class="bg-gray-800 text-white p-6 lg:w-64">
+
+            <h2 class="text-2xl font-bold mb-8">
+                Admin Panel
+            </h2>
+
+            <ul class="space-y-5">
+
+                <li class="flex items-center gap-3 hover:text-blue-400 cursor-pointer">
+                    <i class="fa-solid fa-gauge"></i>
+                    Dashboard
+                </li>
+
+                <li class="flex items-center gap-3 hover:text-blue-400 cursor-pointer">
+                    <i class="fa-solid fa-users"></i>
+                    Users
+                </li>
+
+                <li class="flex items-center gap-3 hover:text-blue-400 cursor-pointer">
+                    <i class="fa-solid fa-book-open"></i>
+                    Courses
+                </li>
+
+                <li class="flex items-center gap-3 hover:text-blue-400 cursor-pointer">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Reports
+                </li>
+
+                <li class="flex items-center gap-3 hover:text-blue-400 cursor-pointer">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </li>
+
+            </ul>
+
+        </div>
+
+            <!-- Main Content -->
+            <div class="flex-1 p-6">
+
+               <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+
+                    <!-- Total Users -->
+                    <div class="bg-blue-100 p-5 rounded shadow flex items-center justify-between">
+                        <div>
+                            <h3 class="text-gray-700">Total Users</h3>
+                            <p class="text-2xl font-bold">1200</p>
+                        </div>
+                        <i class="fa-solid fa-users text-4xl text-blue-600"></i>
+                    </div>
+
+                    <!-- Courses -->
+                    <div class="bg-green-100 p-5 rounded shadow flex items-center justify-between">
+                        <div>
+                            <h3 class="text-gray-700">Courses</h3>
+                            <p class="text-2xl font-bold">50</p>
+                        </div>
+                        <i class="fa-solid fa-book-open text-4xl text-green-600"></i>
+                    </div>
+
+                    <!-- Revenue -->
+                    <div class="bg-yellow-100 p-5 rounded shadow flex items-center justify-between">
+                        <div>
+                            <h3 class="text-gray-700">Revenue</h3>
+                            <p class="text-2xl font-bold">₹50K</p>
+                        </div>
+                        <i class="fa-solid fa-indian-rupee-sign text-4xl text-yellow-600"></i>
+                    </div>
+
+                    <!-- Reports -->
+                    <div class="bg-red-100 p-5 rounded shadow flex items-center justify-between">
+                        <div>
+                            <h3 class="text-gray-700">Reports</h3>
+                            <p class="text-2xl font-bold">150</p>
+                        </div>
+                        <i class="fa-solid fa-chart-line text-4xl text-red-600"></i>
+                    </div>
+
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full border">
+                        <thead>
+                            <tr class="bg-gray-200">
+                                <th class="border p-3">ID</th>
+                                <th class="border p-3">Name</th>
+                                <th class="border p-3">Email</th>
+                                <th class="border p-3">Course</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="border p-3">1</td>
+                                <td class="border p-3">Aarav</td>
+                                <td class="border p-3">aarav@gmail.com</td>
+                                <td class="border p-3">Full Stack Development</td>
+                            </tr>
+
+                            <tr>
+                                <td class="border p-3">2</td>
+                                <td class="border p-3">Vishwa</td>
+                                <td class="border p-3">vihaan@gmail.com</td>
+                                <td class="border p-3">React JS</td>
+                            </tr>
+
+                            <tr>
+                                <td class="border p-3">3</td>
+                                <td class="border p-3">Aditya</td>
+                                <td class="border p-3">aditya@gmail.com</td>
+                                <td class="border p-3">Python</td>
+                            </tr>
+
+                            <tr>
+                                <td class="border p-3">4</td>
+                                <td class="border p-3">Arjun</td>
+                                <td class="border p-3">arjun@gmail.com</td>
+                                <td class="border p-3">Java</td>
+                            </tr>
+
+                            <tr>
+                                <td class="border p-3">5</td>
+                                <td class="border p-3">Rohan</td>
+                                <td class="border p-3">rohan@gmail.com</td>
+                                <td class="border p-3">Node JS</td>
+                            </tr>
+
+                            <tr>
+                                <td class="border p-3">6</td>
+                                <td class="border p-3">Rahul</td>
+                                <td class="border p-3">rahul@gmail.com</td>
+                                <td class="border p-3">UI/UX Design</td>
+                            </tr>
+
+                            <tr>
+                                <td class="border p-3">7</td>
+                                <td class="border p-3">Priya</td>
+                                <td class="border p-3">priya@gmail.com</td>
+                                <td class="border p-3">Digital Marketing</td>
+                            </tr>
+
+                            <tr>
+                                <td class="border p-3">8</td>
+                                <td class="border p-3">Ananya</td>
+                                <td class="border p-3">ananya@gmail.com</td>
+                                <td class="border p-3">Data Science</td>
+                            </tr>
+
+                            <tr>
+                                <td class="border p-3">9</td>
+                                <td class="border p-3">Sneha</td>
+                                <td class="border p-3">sneha@gmail.com</td>
+                                <td class="border p-3">Machine Learning</td>
+                            </tr>
+
+                            <tr>
+                                <td class="border p-3">10</td>
+                                <td class="border p-3">Karthik</td>
+                                <td class="border p-3">karthik@gmail.com</td>
+                                <td class="border p-3">Cloud Computing</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+        <!-- Contact -->
+        <section class="container mx-auto py-16 px-6">
+
+            <h2 class="text-3xl font-bold text-center mb-8">
+                Contact Us
+            </h2>
+
+            <form class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow">
+
+                <input
+                    type="text"
+                    placeholder="Full Name"
+                    class="w-full border p-3 mb-4 rounded">
+
+                <input
+                    type="email"
+                    placeholder="Email Address"
+                    class="w-full border p-3 mb-4 rounded">
+
+                <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    class="w-full border p-3 mb-4 rounded">
+
+                <input
+                    type="text"
+                    placeholder="Subject"
+                    class="w-full border p-3 mb-4 rounded">
+
+                <textarea
+                    rows="5"
+                    placeholder="Your Message"
+                    class="w-full border p-3 mb-4 rounded"></textarea>
+
+                <button
+                    class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">
+                    <i class="fa-solid fa-paper-plane mr-2"></i>
+                    Send Message
+                </button>
+
+            </form>
+
+</section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-6">
+        <p>© 2026 Tech Academy. All Rights Reserved.</p>
+
+        <div class="flex justify-center gap-6 mt-4 text-2xl">
+
+            <a href="#" class="hover:text-blue-500">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="#" class="hover:text-pink-500">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" class="hover:text-blue-400">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+
+            <a href="#" class="hover:text-blue-600">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="#" class="hover:text-red-600">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+        </div>
+    </footer>
+
+</body>
+</html>
