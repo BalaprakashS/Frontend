@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - LMS</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-100">
+
+    <div class="flex">
+
+        <!-- Sidebar -->
+        <aside class="w-64 min-h-screen bg-slate-900 text-white p-5">
+
+            <h2 class="text-3xl font-bold mb-4">
+                LMS
+            </h2>
+
+            <hr class="border-slate-700">
+
+            <nav class="mt-4 space-y-2">
+
+                <a href="dashboard.html"
+                    class="block p-3 rounded-lg hover:bg-slate-700 transition">
+                    Dashboard
+                </a>
+
+                <a href="courses.html"
+                    class="block p-3 rounded-lg hover:bg-slate-700 transition">
+                    Courses
+                </a>
+
+                <a href="profile.html"
+                    class="block p-3 rounded-lg hover:bg-slate-700 transition">
+                    Profile
+                </a>
+
+                <a href="#"
+                    class="block p-3 rounded-lg hover:bg-slate-700 transition">
+                    Students
+                </a>
+
+                <a href="login.html"
+                    class="block p-3 rounded-lg hover:bg-slate-700 transition">
+                    Logout
+                </a>
+
+            </nav>
+
+        </aside>
+
+        <!-- Main Content -->
+        <div class="flex-1">
+
+            <!-- Navbar -->
+            <nav class="bg-white shadow px-6 py-4 flex justify-between items-center">
+
+                <h1 class="text-2xl font-bold">
+                    LMS Dashboard
+                </h1>
+
+                <div class="flex items-center gap-3">
+
+                    <img src="../../assets/image/profile2.png" width="40" height="40"
+                        alt="Profile"
+                        class="rounded-full">
+
+                    <span class="font-medium">
+                        Bala Prakash
+                    </span>
+
+                </div>
+
+            </nav>
+
+            <!-- Dashboard Content -->
+            <div class="p-6">
+
+                <h2 class="text-3xl font-bold mb-6">
+                    Dashboard Overview
+                </h2>
+
+                <!-- Stats Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mb-8">
+
+                    <div class="bg-white rounded-xl shadow p-6 text-center hover:shadow-xl transition">
+
+                        <h5 class="text-gray-500">
+                            Total Students
+                        </h5>
+
+                        <h2 class="text-4xl font-bold text-blue-600 mt-2">
+                            1250
+                        </h2>
+
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow p-6 text-center hover:shadow-xl transition">
+
+                        <h5 class="text-gray-500">
+                            Total Courses
+                        </h5>
+
+                        <h2 class="text-4xl font-bold text-green-600 mt-2">
+                            35
+                        </h2>
+
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow p-6 text-center hover:shadow-xl transition">
+
+                        <h5 class="text-gray-500">
+                            Teachers
+                        </h5>
+
+                        <h2 class="text-4xl font-bold text-yellow-500 mt-2">
+                            52
+                        </h2>
+
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow p-6 text-center hover:shadow-xl transition">
+
+                        <h5 class="text-gray-500">
+                            Revenue
+                        </h5>
+
+                        <h2 class="text-4xl font-bold text-red-500 mt-2">
+                            ₹4.5L
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <!-- Student Records -->
+                <div class="bg-white rounded-xl shadow p-6 mb-8">
+
+                    <div class="flex justify-between items-center mb-5">
+
+                        <h3 class="text-2xl font-bold">
+                            Student Records
+                        </h3>
+
+                        <button
+                            class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">
+                            Add Student
+                        </button>
+
+                    </div>
+
+                    <div class="overflow-x-auto">
+
+                        <table class="w-full">
+
+                            <thead>
+
+                                <tr class="bg-slate-900 text-white">
+
+                                    <th class="p-3 text-left">ID</th>
+                                    <th class="p-3 text-left">Name</th>
+                                    <th class="p-3 text-left">Course</th>
+                                    <th class="p-3 text-left">Email</th>
+                                    <th class="p-3 text-left">Status</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr class="border-b hover:bg-slate-50">
+                                    <td class="p-3">101</td>
+                                    <td class="p-3">John</td>
+                                    <td class="p-3">Full Stack</td>
+                                    <td class="p-3">john@gmail.com</td>
+                                    <td class="p-3">
+                                        <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm">
+                                            Active
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr class="border-b hover:bg-slate-50">
+                                    <td class="p-3">102</td>
+                                    <td class="p-3">David</td>
+                                    <td class="p-3">UI/UX</td>
+                                    <td class="p-3">david@gmail.com</td>
+                                    <td class="p-3">
+                                        <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm">
+                                            Active
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr class="border-b hover:bg-slate-50">
+                                    <td class="p-3">103</td>
+                                    <td class="p-3">Priya</td>
+                                    <td class="p-3">Python</td>
+                                    <td class="p-3">priya@gmail.com</td>
+                                    <td class="p-3">
+                                        <span class="bg-yellow-500 text-white px-3 py-1 rounded-full text-sm">
+                                            Pending
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr class="border-b hover:bg-slate-50">
+                                    <td class="p-3">104</td>
+                                    <td class="p-3">Rahul</td>
+                                    <td class="p-3">Java</td>
+                                    <td class="p-3">rahul@gmail.com</td>
+                                    <td class="p-3">
+                                        <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm">
+                                            Active
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr class="border-b hover:bg-slate-50">
+                                    <td class="p-3">105</td>
+                                    <td class="p-3">Ananya</td>
+                                    <td class="p-3">Data Science</td>
+                                    <td class="p-3">ananya@gmail.com</td>
+                                    <td class="p-3">
+                                        <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm">
+                                            Active
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr class="border-b hover:bg-slate-50">
+                                    <td class="p-3">106</td>
+                                    <td class="p-3">Karan</td>
+                                    <td class="p-3">React JS</td>
+                                    <td class="p-3">karan@gmail.com</td>
+                                    <td class="p-3">
+                                        <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm">
+                                            Inactive
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr class="border-b hover:bg-slate-50">
+                                    <td class="p-3">107</td>
+                                    <td class="p-3">Meera</td>
+                                    <td class="p-3">AI & ML</td>
+                                    <td class="p-3">meera@gmail.com</td>
+                                    <td class="p-3">
+                                        <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm">
+                                            Active
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr class="border-b hover:bg-slate-50">
+                                    <td class="p-3">108</td>
+                                    <td class="p-3">Arjun</td>
+                                    <td class="p-3">Cyber Security</td>
+                                    <td class="p-3">arjun@gmail.com</td>
+                                    <td class="p-3">
+                                        <span class="bg-yellow-500 text-white px-3 py-1 rounded-full text-sm">
+                                            Pending
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr class="border-b hover:bg-slate-50">
+                                    <td class="p-3">109</td>
+                                    <td class="p-3">Sneha</td>
+                                    <td class="p-3">Cloud Computing</td>
+                                    <td class="p-3">sneha@gmail.com</td>
+                                    <td class="p-3">
+                                        <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm">
+                                            Active
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr class="border-b hover:bg-slate-50">
+                                    <td class="p-3">110</td>
+                                    <td class="p-3">Vikram</td>
+                                    <td class="p-3">DevOps</td>
+                                    <td class="p-3">vikram@gmail.com</td>
+                                    <td class="p-3">
+                                        <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm">
+                                            Inactive
+                                        </span>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+                <!-- Announcement Section -->
+                <div class="bg-white rounded-xl shadow p-6">
+
+                    <h3 class="text-2xl font-bold mb-4">
+                        Announcement
+                    </h3>
+
+                    <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
+
+                        New courses will be launched next month.
+                        Stay updated with LMS announcements.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCorp Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-900 text-white">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold">TechCorp</h1>
+
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#" class="hover:text-yellow-300">Home</a>
+                <a href="#" class="hover:text-yellow-300">About</a>
+
+                <!-- Dropdown -->
+                <div class="relative group">
+
+                <button class="hover:text-yellow-300">
+                    Services ▼
+                </button>
+
+                <div class="absolute left-0 top-full hidden group-hover:block bg-white text-black rounded shadow-lg min-w-[220px] z-50">
+
+                    <a href="#" class="block px-4 py-3 hover:bg-gray-200">
+                        Web Development
+                    </a>
+
+                    <a href="#" class="block px-4 py-3 hover:bg-gray-200">
+                        UI/UX Design
+                    </a>
+
+                    <a href="#" class="block px-4 py-3 hover:bg-gray-200">
+                        Digital Marketing
+                    </a>
+
+                </div>
+
+            </div>
+
+                <a href="#" class="hover:text-yellow-300">Contact</a>
+            </div>
+
+            <!-- Mobile Button -->
+            <button class="md:hidden text-2xl">
+                ☰
+            </button>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <section class="bg-gradient-to-r from-blue-700 to-indigo-900 text-white py-24 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-bold mb-4">
+                Grow Your Business With TechCorp
+            </h2>
+
+            <p class="text-xl mb-6">
+                We provide innovative digital solutions for modern businesses.
+            </p>
+
+            <button class="bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300">
+                Get Started
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="container mx-auto px-6 py-16">
+        <div class="flex flex-col md:flex-row items-center gap-10">
+
+            <!-- Image Left -->
+            <div class="md:w-1/2">
+                <img src="../assets/image/day3img/banner.jpg"
+                    class="rounded-lg shadow-lg w-full">
+            </div>
+
+            <!-- Content Right -->
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-bold mb-4">
+                    About Our Company
+                </h2>
+
+                <p class="text-gray-700 leading-8">
+                    TechCorp is a leading technology company helping businesses
+                    transform digitally. We specialize in web development,
+                    software solutions, UI/UX design, and digital marketing.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-6">
+
+            <h2 class="text-4xl font-bold text-center mb-12">
+                Our Services
+            </h2>
+
+            <!-- Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl">
+                    <h3 class="text-2xl font-bold mb-3">Web Development</h3>
+                    <p>Modern and responsive websites for your business.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl">
+                    <h3 class="text-2xl font-bold mb-3">UI/UX Design</h3>
+                    <p>Creative and user-friendly interface designs.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl">
+                    <h3 class="text-2xl font-bold mb-3">Digital Marketing</h3>
+                    <p>Increase your online presence and reach.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl">
+                    <h3 class="text-2xl font-bold mb-3">SEO Services</h3>
+                    <p>Improve rankings and attract more customers.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl">
+                    <h3 class="text-2xl font-bold mb-3">App Development</h3>
+                    <p>Mobile applications for Android and iOS.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl">
+                    <h3 class="text-2xl font-bold mb-3">Cloud Solutions</h3>
+                    <p>Scalable cloud infrastructure and services.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+<!-- Contact -->
+<section class="container mx-auto px-6 py-16">
+
+    <h2 class="text-4xl font-bold text-center mb-12">
+        Contact Us
+    </h2>
+
+        <!-- Contact Form -->
+        <div class="bg-white p-8 rounded-lg shadow">
+
+            <h3 class="text-2xl font-bold mb-6">
+                Send Us a Message
+            </h3>
+
+            <input
+                type="text"
+                placeholder="Your Name"
+                class="w-full border p-3 rounded mb-4">
+
+            <input
+                type="email"
+                placeholder="Your Email"
+                class="w-full border p-3 rounded mb-4">
+
+            <input
+                type="text"
+                placeholder="Subject"
+                class="w-full border p-3 rounded mb-4">
+
+            <textarea
+                rows="5"
+                placeholder="Message"
+                class="w-full border p-3 rounded mb-4"></textarea>
+
+            <button
+                class="bg-blue-700 text-white px-6 py-3 rounded hover:bg-blue-800 w-full">
+                Send Message
+            </button>
+
+        </div>
+
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-6">
+        <div class="container mx-auto text-center">
+            <h3 class="text-2xl font-bold mb-2">TechCorp</h3>
+            <p>Building Digital Solutions for the Future.</p>
+            <p class="mt-3">© 2026 TechCorp. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

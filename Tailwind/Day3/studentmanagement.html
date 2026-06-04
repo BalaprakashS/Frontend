@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management UI</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <nav class="bg-blue-700 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+
+            <h1 class="text-3xl font-bold">
+                StudentInfo
+            </h1>
+
+            <ul class="hidden md:flex gap-6 font-medium">
+                <li><a href="#" class="hover:text-yellow-300">Home</a></li>
+                <li><a href="#" class="hover:text-yellow-300">Students</a></li>
+                <li><a href="#" class="hover:text-yellow-300">Courses</a></li>
+                <li><a href="#" class="hover:text-yellow-300">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- =========================
+         SEARCH BAR
+    ========================== -->
+    <section class="container mx-auto px-6 py-6">
+
+        <div class="bg-white p-4 rounded-lg shadow">
+            <input
+                type="text"
+                placeholder="Search Students..."
+                class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+
+    </section>
+
+    <!-- =========================
+         ADD STUDENT FORM
+    ========================== -->
+    <section class="container mx-auto px-6 pb-8">
+
+        <div class="bg-white p-6 rounded-lg shadow">
+
+            <h2 class="text-3xl font-bold mb-6">
+                Add Student Details
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+                <!-- Student Name -->
+                <input
+                    type="text"
+                    placeholder="Student Name"
+                    class="border border-gray-300 rounded-lg p-3">
+
+                <!-- Student ID -->
+                <input
+                    type="text"
+                    placeholder="Student ID"
+                    class="border border-gray-300 rounded-lg p-3">
+
+                <!-- Course -->
+                <input
+                    type="text"
+                    placeholder="Course"
+                    class="border border-gray-300 rounded-lg p-3">
+
+                <!-- Department -->
+                <input
+                    type="text"
+                    placeholder="Department"
+                    class="border border-gray-300 rounded-lg p-3">
+
+                <!-- Email -->
+                <input
+                    type="email"
+                    placeholder="Email Address"
+                    class="border border-gray-300 rounded-lg p-3">
+
+                <!-- Phone -->
+                <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    class="border border-gray-300 rounded-lg p-3">
+
+                <!-- Gender -->
+                <select class="border border-gray-300 rounded-lg p-3">
+                    <option>Select Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+
+                <!-- Date of Birth -->
+                <input
+                    type="date"
+                    class="border border-gray-300 rounded-lg p-3">
+
+                <!-- Address -->
+                <input
+                    type="text"
+                    placeholder="Address"
+                    class="border border-gray-300 rounded-lg p-3">
+
+                <!-- City -->
+                <input
+                    type="text"
+                    placeholder="City"
+                    class="border border-gray-300 rounded-lg p-3">
+
+                <!-- State -->
+                <input
+                    type="text"
+                    placeholder="State"
+                    class="border border-gray-300 rounded-lg p-3">
+
+                <!-- Pincode -->
+                <input
+                    type="text"
+                    placeholder="Pincode"
+                    class="border border-gray-300 rounded-lg p-3">
+
+                <!-- Parent Name -->
+                <input
+                    type="text"
+                    placeholder="Parent / Guardian Name"
+                    class="border border-gray-300 rounded-lg p-3">
+
+                <!-- Parent Phone -->
+                <input
+                    type="tel"
+                    placeholder="Parent Phone Number"
+                    class="border border-gray-300 rounded-lg p-3">
+
+                <!-- Blood Group -->
+                <select class="border border-gray-300 rounded-lg p-3">
+                    <option>Blood Group</option>
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>AB+</option>
+                    <option>AB-</option>
+                    <option>O+</option>
+                    <option>O-</option>
+                </select>
+
+                <!-- Profile Photo -->
+                <input
+                    type="file"
+                    class="border border-gray-300 rounded-lg p-3">
+
+            </div>
+
+            <!-- About Student -->
+            <textarea
+                rows="4"
+                placeholder="About Student"
+                class="w-full border border-gray-300 rounded-lg p-3 mt-4"></textarea>
+
+            <button
+                class="mt-5 bg-blue-700 text-white px-8 py-3 rounded-lg hover:bg-blue-800 transition">
+                Add Student
+            </button>
+
+        </div>
+
+    </section>
+    
+    <!-- =========================
+         STUDENT CARDS
+    ========================== -->
+    <section class="container mx-auto px-6 py-6">
+
+        <h2 class="text-4xl font-bold text-center mb-8">
+            Student List
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+
+            <!-- Student 1 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="../assets/image/day3img/student1.png"
+                    class="w-full h-56 object-cover">
+
+                <div class="p-5">
+                    <h3 class="text-xl font-bold">Bala Prakash</h3>
+                    <p class="text-gray-600 mt-2">Full Stack Development</p>
+                    <p class="text-gray-600">bala@email.com</p>
+                    <p class="text-gray-600">+91 98765 43210</p>
+
+                    <div class="flex gap-3 mt-4">
+                        <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg flex items-center gap-2">
+                            <i class="fa-solid fa-pen"></i>
+                            Edit
+                        </button>
+
+                        <button class="bg-red-600 text-white px-4 py-2 rounded-lg flex items-center gap-2">
+                            <i class="fa-solid fa-trash"></i>
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Student 2 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="../assets/image/day3img/student2.png"
+                    class="w-full h-56 object-cover">
+
+                <div class="p-5">
+                    <h3 class="text-xl font-bold">Rahul Kumar</h3>
+                    <p class="text-gray-600 mt-2">UI/UX Design</p>
+                    <p class="text-gray-600">rahul@email.com</p>
+                    <p class="text-gray-600">+91 91234 56789</p>
+
+                    <div class="flex gap-3 mt-4">
+                        <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg">
+                            Edit
+                        </button>
+
+                        <button class="bg-red-600 text-white px-4 py-2 rounded-lg">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Student 3 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="../assets/image/day3img/student3.png"
+                    class="w-full h-56 object-cover">
+
+                <div class="p-5">
+                    <h3 class="text-xl font-bold">Priya Sharma</h3>
+                    <p class="text-gray-600 mt-2">React Development</p>
+                    <p class="text-gray-600">priya@email.com</p>
+                    <p class="text-gray-600">+91 99887 77665</p>
+
+                    <div class="flex gap-3 mt-4">
+                        <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg">
+                            Edit
+                        </button>
+
+                        <button class="bg-red-600 text-white px-4 py-2 rounded-lg">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Student 4 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="../assets/image/day3img/student4.png"
+                    class="w-full h-56 object-cover">
+
+                <div class="p-5">
+                    <h3 class="text-xl font-bold">Arun Kumar</h3>
+                    <p class="text-gray-600 mt-2">Python Development</p>
+                    <p class="text-gray-600">arun@email.com</p>
+                    <p class="text-gray-600">+91 90000 11111</p>
+
+                    <div class="flex gap-3 mt-4">
+                        <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg">
+                            Edit
+                        </button>
+
+                        <button class="bg-red-600 text-white px-4 py-2 rounded-lg">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Student 5 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="../assets/image/day3img/student5.png"
+                    class="w-full h-56 object-cover">
+
+                <div class="p-5">
+                    <h3 class="text-xl font-bold">Divya</h3>
+                    <p class="text-gray-600 mt-2">Java Programming</p>
+                    <p class="text-gray-600">divya@email.com</p>
+                    <p class="text-gray-600">+91 95555 44444</p>
+
+                    <div class="flex gap-3 mt-4">
+                        <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg">
+                            Edit
+                        </button>
+
+                        <button class="bg-red-600 text-white px-4 py-2 rounded-lg">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Student 6 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="../assets/image/day3img/student6.png"
+                    class="w-full h-56 object-cover">
+
+                <div class="p-5">
+                    <h3 class="text-xl font-bold">Karthik</h3>
+                    <p class="text-gray-600 mt-2">Data Science</p>
+                    <p class="text-gray-600">karthik@email.com</p>
+                    <p class="text-gray-600">+91 97777 55555</p>
+
+                    <div class="flex gap-3 mt-4">
+                        <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg">
+                            Edit
+                        </button>
+
+                        <button class="bg-red-600 text-white px-4 py-2 rounded-lg">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Student 7 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="../assets/image/day3img/student7.png"
+                    class="w-full h-56 object-cover">
+
+                <div class="p-5">
+                    <h3 class="text-xl font-bold">Meena</h3>
+                    <p class="text-gray-600 mt-2">UI Development</p>
+                    <p class="text-gray-600">meena@email.com</p>
+                    <p class="text-gray-600">+91 94444 33333</p>
+
+                    <div class="flex gap-3 mt-4">
+                        <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg">
+                            Edit
+                        </button>
+
+                        <button class="bg-red-600 text-white px-4 py-2 rounded-lg">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Student 8 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="../assets/image/day3img/student8.png"
+                    class="w-full h-56 object-cover">
+
+                <div class="p-5">
+                    <h3 class="text-xl font-bold">Vignesh</h3>
+                    <p class="text-gray-600 mt-2">Cloud Computing</p>
+                    <p class="text-gray-600">vignesh@email.com</p>
+                    <p class="text-gray-600">+91 93333 22222</p>
+
+                    <div class="flex gap-3 mt-4">
+                        <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg">
+                            Edit
+                        </button>
+
+                        <button class="bg-red-600 text-white px-4 py-2 rounded-lg">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="bg-gray-900 text-white py-6 mt-10">
+
+        <div class="container mx-auto text-center">
+
+            <h3 class="text-2xl font-bold">
+                StudentInfo
+            </h3>
+
+            <p class="mt-2">
+                Manage Students Efficiently
+            </p>
+
+            <p class="mt-4">
+                © 2026 StudentHub. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
