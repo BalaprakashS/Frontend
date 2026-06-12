@@ -1,0 +1,34 @@
+<script>
+    // Function + Array + Object + Loop
+
+function getStudents() {
+    return [
+        {
+            id: 101,
+            name: "Bala",
+            course: "Full Stack"
+        },
+        {
+            id: 102,
+            name: "Arun",
+            course: "Data Science"
+        },
+        {
+            id: 103,
+            name: "Kumar",
+            course: "UI/UX"
+        }
+    ];
+}
+
+// Function Call
+let students = getStudents();
+
+// Loop
+for (let i = 0; i < students.length; i++) {
+    console.log("ID:", students[i].id);
+    console.log("Name:", students[i].name);
+    console.log("Course:", students[i].course);
+
+}
+</script>
