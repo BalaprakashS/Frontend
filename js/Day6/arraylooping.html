@@ -1,0 +1,204 @@
+<script>
+
+    // Array
+    // Task 1 - Print Hero Names
+
+let heros = ["Vijay", "Ajith", "Suriya", "SK"];
+
+for (let i = 0; i < heros.length; i++) {
+    console.log(heros[i]);
+}
+
+
+// Task 2 - Find Highest Movie Collection
+
+let collections1 = [200, 500, 800, 400, 600];
+
+let highest = collections1[0];
+
+for (let i = 1; i < collections1.length; i++) {
+    if (collections1[i] > highest) {
+        highest = collections1[i];
+    }
+}
+
+console.log("Highest Collection:", highest);
+
+
+// Task 3 - Find Lowest Movie Collection
+
+let collections2 = [200, 500, 800, 400, 600];
+
+let lowest = collections2[0];
+
+for (let i = 1; i < collections2.length; i++) {
+    if (collections2[i] < lowest) {
+        lowest = collections2[i];
+    }
+}
+
+console.log("Lowest Collection:", lowest);
+
+
+// Task 4 - Find Total Movie Collection
+
+let collections3 = [200, 500, 800, 400, 600];
+
+let total = 0;
+
+for (let i = 0; i < collections3.length; i++) {
+    total += collections3[i];
+}
+
+console.log("Total Collection:", total);
+
+
+// Task 5 - Find Average Movie Collection
+
+let collections4 = [200, 500, 800, 400, 600];
+
+let sum = 0;
+
+for (let i = 0; i < collections4.length; i++) {
+    sum += collections4[i];
+}
+
+let average = sum / collections4.length;
+
+console.log("Average Collection:", average);
+
+
+// Task 6 - Print Hero Names in Reverse Order
+
+let heroNames = ["Vijay", "Ajith", "Suriya", "SK"];
+
+for (let i = heroNames.length - 1; i >= 0; i--) {
+    console.log(heroNames[i]);
+}
+
+
+// Task 7 - Search Mango in Fruits Array
+
+let fruits1 = ["Apple", "Mango", "Orange", "Banana"];
+
+let found = false;
+
+for (let i = 0; i < fruits1.length; i++) {
+    if (fruits1[i] === "Mango") {
+        found = true;
+    }
+}
+
+if (found) {
+    console.log("Fruit Found");
+}
+
+
+// Task 8 - Count Total Fruits Without Using .length in Output
+
+let fruits2 = ["Apple", "Mango", "Orange", "Banana"];
+
+let count = 0;
+
+for (let fruit of fruits2) {
+    count++;
+}
+
+console.log("Total Fruits:", count);
+
+
+// Task 9 - Find the Longest Hero Name
+
+let heroes2 = ["Vijay", "Ajith", "Sivakarthikeyan", "SK"];
+
+let longest = heroes2[0];
+
+for (let i = 1; i < heroes2.length; i++) {
+    if (heroes2[i].length > longest.length) {
+        longest = heroes2[i];
+    }
+}
+
+console.log("Longest Hero Name:", longest);
+
+
+// Task 1 - Palindrome Check
+
+let movie = "LEVEL";
+let reverse = "";
+
+for (let i = movie.length - 1; i >= 0; i--) {
+    reverse += movie[i];
+}
+
+if (movie === reverse) {
+    console.log("Palindrome");
+} else {
+    console.log("Not Palindrome");
+}
+
+
+// Task 2 - Reverse String
+
+let hero1 = "VIJAY";
+let reverseHero = "";
+
+for (let i = hero1.length - 1; i >= 0; i--) {
+    reverseHero += hero1[i];
+}
+
+console.log(reverseHero);
+
+
+// Task 3 - Fibonacci Series
+
+let first = 0;
+let second = 1;
+
+console.log(first);
+console.log(second);
+
+for (let i = 3; i <= 10; i++) {
+    let third = first + second;
+    console.log(third);
+
+    first = second;
+    second = third;
+}
+
+
+// Task 4 - Count Vowels
+
+let hero2 = "SURIYA";
+let vowelsCount = 0;
+
+for (let i = 0; i < hero2.length; i++) {
+    if (
+        hero2[i] === "A" ||
+        hero2[i] === "E" ||
+        hero2[i] === "I" ||
+        hero2[i] === "O" ||
+        hero2[i] === "U"
+    ) {
+        vowelsCount++;
+    }
+}
+
+console.log("Vowels Count :", vowelsCount);
+
+
+// Task 5 - Count Character Frequency
+
+let hero3 = "VIJAY";
+let character = "A";
+let count1 = 0;
+
+for (let i = 0; i < hero3.length; i++) {
+    if (hero3[i] === character) {
+        count1++;
+    }
+}
+
+console.log(count1);
+
+</script>

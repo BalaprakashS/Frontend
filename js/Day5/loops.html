@@ -1,125 +1,115 @@
-<script>
-    // ===============================
-// Function Tasks (1 - 5)
-// ===============================
+    <script>
 
-// Task 1
-function greet() {
-    console.log("Welcome To JavaScript");
-}
-greet();
+    // Function Tasks (1 - 5)
+    // Task 1
+    function greet() {
+        console.log("Welcome To JavaScript");
+    }
+    greet();
 
-// Task 2
-let myName = "Bala";
+    // Task 2
+    let myName = "Bala";
 
-function showName() {
-    console.log("Name:", myName);
-}
-showName();
+    function showName() {
+        console.log("Name:", myName);
+    }
+    showName();
 
-// Task 3
-function addNumbers() {
-    let result = 10 + 20;
-    console.log("Addition:", result);
-}
-addNumbers();
+    // Task 3
+    function addNumbers() {
+        let result = 10 + 20;
+        console.log("Addition:", result);
+    }
+    addNumbers();
 
-// Task 4
-function square() {
-    let num = 5;
-    console.log("Square:", num * num);
-}
-square();
+    // Task 4
+    function square() {
+        let num = 5;
+        console.log("Square:", num * num);
+    }
+    square();
 
-// Task 5
-function studentInfo() {
-    console.log("Name: Bala");
-    console.log("Course: MERN");
-    console.log("City: Chennai");
-}
-studentInfo();
+    // Task 5
+    function studentInfo() {
+        console.log("Name: Bala");
+        console.log("Course: MERN");
+        console.log("City: Chennai");
+    }
+    studentInfo();
 
+    // Array Tasks (6 - 10)
+    // Task 6
+    let fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"];
+    console.log("Fruits Array:", fruits);
 
-// ===============================
-// Array Tasks (6 - 10)
-// ===============================
+    // Task 7
+    let students = ["Sudhan", "Rahul", "Kumar", "Arun", "Vijay"];
+    console.log("First Student:", students[0]);
 
-// Task 6
-let fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"];
-console.log("Fruits Array:", fruits);
+    // Task 8
+    let numbers = [10, 20, 30, 40, 50];
+    console.log("Last Value:", numbers[numbers.length - 1]);
 
-// Task 7
-let students = ["Sudhan", "Rahul", "Kumar", "Arun", "Vijay"];
-console.log("First Student:", students[0]);
+    // Task 9
+    let courses = [];
+    courses[0] = "HTML";
+    courses[1] = "CSS";
+    courses[2] = "JavaScript";
+    console.log("Courses:", courses);
 
-// Task 8
-let numbers = [10, 20, 30, 40, 50];
-console.log("Last Value:", numbers[numbers.length - 1]);
+    // Task 10
+    let colors = ["Red", "Blue", "Green", "Yellow", "Black"];
 
-// Task 9
-let courses = [];
-courses[0] = "HTML";
-courses[1] = "CSS";
-courses[2] = "JavaScript";
-console.log("Courses:", courses);
+    for (let i = 0; i < colors.length; i++) {
+        console.log(colors[i]);
+    }
 
-// Task 10
-let colors = ["Red", "Blue", "Green", "Yellow", "Black"];
+    // Object Tasks (11 - 15)
+    // Task 11
+    let student = {
+        name: "Bala",
+        age: 22,
+        course: "MERN"
+    };
 
-for (let i = 0; i < colors.length; i++) {
-    console.log(colors[i]);
-}
+    console.log(student);
 
+    // Task 12
+    let employee = {
+        employeeName: "Rahul",
+        salary: 30000,
+        department: "IT"
+    };
 
-// ===============================
-// Object Tasks (11 - 15)
-// ===============================
+    console.log(employee.employeeName);
 
-// Task 11
-let student = {
-    name: "Bala",
-    age: 22,
-    course: "MERN"
-};
+    // Task 13
+    let mobile = {
+        brand: "Samsung",
+        model: "S24",
+        price: 75000
+    };
 
-console.log(student);
+    console.log(mobile["price"]);
 
-// Task 12
-let employee = {
-    employeeName: "Rahul",
-    salary: 30000,
-    department: "IT"
-};
+    // Task 14
+    let car = {
+        brand: "Toyota",
+        model: "Innova"
+    };
 
-console.log(employee.employeeName);
+    console.log("Brand:", car.brand);
+    console.log("Model:", car.model);
 
-// Task 13
-let mobile = {
-    brand: "Samsung",
-    model: "S24",
-    price: 75000
-};
+    // Task 15
+    let college = {
+        collegeName: "SRM College",
+        location: "Chennai",
+        students: 5000
+    };
 
-console.log(mobile["price"]);
+    console.log(college.collegeName);
+    console.log(college.location);
+    console.log(college.students);
 
-// Task 14
-let car = {
-    brand: "Toyota",
-    model: "Innova"
-};
-
-console.log("Brand:", car.brand);
-console.log("Model:", car.model);
-
-// Task 15
-let college = {
-    collegeName: "SRM College",
-    location: "Chennai",
-    students: 5000
-};
-
-console.log(college.collegeName);
-console.log(college.location);
-console.log(college.students);
-
-</script>
+    </script>
