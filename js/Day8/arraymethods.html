@@ -1,0 +1,92 @@
+<script>
+
+// Task 1 – push() Method
+let courses1 = ["HTML", "CSS", "JavaScript"];
+courses1.push("React");
+courses1.push("Node.js");
+console.log(courses1);
+
+
+// Task 2 – pop() Method
+let courses2 = ["HTML", "CSS", "JavaScript", "React"];
+let removedCourse = courses2.pop();
+console.log(removedCourse);
+console.log(courses2);
+
+
+// Task 3 – shift() Method
+let fruits = ["Apple", "Mango", "Orange", "Banana"];
+let removedFruit = fruits.shift();
+console.log(removedFruit);
+console.log(fruits);
+
+
+// Task 4 – unshift() Method
+let heroes = ["Ajith", "Suriya", "SK"];
+heroes.unshift("Vijay");
+heroes.unshift("Dhanush");
+console.log(heroes);
+
+
+// Task 5 – splice() Method
+let technologies = ["HTML", "CSS", "Bootstrap", "React"];
+technologies.splice(2, 1, "JavaScript");
+console.log(technologies);
+
+
+// Task 6 – slice() Method
+let courses3 = ["HTML", "CSS", "JavaScript", "React", "Node"];
+let newCourses = courses3.slice(2, 4);
+console.log(newCourses);
+
+
+// Task 7 – Object Looping
+let student = {
+  name: "Sudhan",
+  course: "MERN",
+  city: "Chennai",
+  age: 25
+};
+
+for (let key in student) {
+  console.log(key + " : " + student[key]);
+}
+
+
+// Task 8 – Array of Objects Looping
+let actors = [
+  {
+    name: "Vijay",
+    movie: "GOAT"
+  },
+  {
+    name: "Ajith",
+    movie: "Vidaamuyarchi"
+  },
+  {
+    name: "Suriya",
+    movie: "Kanguva"
+  }
+];
+
+for (let i = 0; i < actors.length; i++) {
+  console.log(actors[i].name + " - " + actors[i].movie);
+}
+
+
+// Task 9 – join() Method
+let stars = ["Vijay", "Ajith", "Suriya", "SK"];
+let result = stars.join(" | ");
+console.log(result);
+
+
+// Task 10 – includes() Method
+let courses4 = ["HTML", "CSS", "JavaScript", "React"];
+
+if (courses4.includes("React")) {
+  console.log("Course Found");
+} else {
+  console.log("Course Not Found");
+}
+
+</script>
