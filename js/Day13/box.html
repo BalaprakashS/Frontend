@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Toggle Box</title>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-100 gap-4">
+
+  <!-- Input -->
+  <input
+    type="text"
+    id="command"
+    placeholder="Type show or hide"
+    class="border-2 border-gray-300 p-3 rounded-lg w-72"
+  >
+
+  <!-- Button -->
+  <button
+    id="btn"
+    class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600"
+  >
+    Submit
+  </button>
+
+  <!-- Box -->
+  <div
+    id="box"
+    class="w-80 h-80 bg-pink-500 text-white text-4xl font-bold flex items-center justify-center rounded-xl transition-all duration-500"
+  >
+    BOX
+  </div>
+
+  <script>
+    let input = document.getElementById("command");
+    let btn = document.getElementById("btn");
+    let box = document.getElementById("box");
+
+    btn.addEventListener("click", () => {
+      let value = input.value.toLowerCase();
+
+      if (value === "hide") {
+        box.classList.add("hidden");
+      } 
+      else if (value === "show") {
+        box.classList.remove("hidden");
+      } 
+      else {
+        alert("Please type 'show' or 'hide'");
+      }
+
+      input.value = "";
+    });
+  </script>
+
+</body>
+</html>

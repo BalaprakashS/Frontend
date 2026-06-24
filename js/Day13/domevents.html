@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOM Assignment Tasks</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-gray-100 p-10">
+
+<h1 class="text-4xl font-bold text-center mb-10">
+DOM Assignment Tasks
+</h1>
+
+<!-- Task 1 -->
+<div class="bg-white p-5 rounded-lg shadow mb-5">
+<h2 class="text-xl font-bold mb-3">Task 1 - Display Hero Name</h2>
+
+<input
+id="heroInput"
+type="text"
+placeholder="Enter Hero Name"
+class="border p-2 rounded w-full mb-3"
+/>
+
+<button
+onclick="showHero()"
+class="bg-blue-500 text-white px-4 py-2 rounded"
+>
+Show Hero
+</button>
+
+<h2 id="heroResult" class="mt-3 text-green-600 font-bold"></h2>
+</div>
+
+<!-- Task 2 -->
+<div class="bg-white p-5 rounded-lg shadow mb-5">
+<h2 class="text-xl font-bold mb-3">Task 2 - Hide Paragraph</h2>
+
+<p id="hidePara">
+This paragraph will be hidden when you click the button.
+</p>
+
+<button
+onclick="hideParagraph()"
+class="bg-red-500 text-white px-4 py-2 rounded mt-3"
+>
+Hide 
+</button>
+</div>
+
+<!-- Task 3 -->
+<div class="bg-white p-5 rounded-lg shadow mb-5">
+<h2 class="text-xl font-bold mb-3">Task 3 - Show Paragraph</h2>
+
+<p id="showPara" class="hidden">
+This paragraph is hidden initially.
+Click the button to show it.
+</p>
+
+<button
+onclick="showParagraph()"
+class="bg-green-500 text-white px-4 py-2 rounded mt-3"
+>
+Show
+</button>
+</div>
+
+<!-- Task 4 -->
+<div class="bg-white p-5 rounded-lg shadow mb-5">
+<h2 class="text-xl font-bold mb-3">Task 4 - Toggle Paragraph</h2>
+
+<p id="togglePara">
+Welcome to JavaScript DOM.<br>
+Learning DOM Manipulation.<br>
+Click the button below.<br>
+Hide and Show this paragraph.
+</p>
+
+<button
+onclick="toggleParagraph()"
+class="bg-purple-500 text-white px-4 py-2 rounded mt-3"
+>
+Toggle
+</button>
+</div>
+
+<!-- Task 5 -->
+<div class="bg-white p-5 rounded-lg shadow mb-5">
+<h2 class="text-xl font-bold mb-3">Task 5 - Username Validation</h2>
+
+<input
+id="username"
+type="text"
+placeholder="Enter Username"
+class="border p-2 rounded w-full mb-3"
+/>
+
+<button
+onclick="checkUser()"
+class="bg-blue-500 text-white px-4 py-2 rounded"
+>
+Login
+</button>
+
+<h2 id="userResult" class="mt-3 font-bold"></h2>
+</div>
+
+<!-- Task 6 -->
+<div class="bg-white p-5 rounded-lg shadow mb-5">
+<h2 class="text-xl font-bold mb-3">Task 6 - Password Strength</h2>
+
+<input
+id="password"
+type="password"
+placeholder="Enter Password"
+class="border p-2 rounded w-full mb-3"
+/>
+
+<button
+onclick="checkPassword()"
+class="bg-blue-500 text-white px-4 py-2 rounded"
+>
+Check Password
+</button>
+
+<h2 id="passwordResult" class="mt-3 font-bold"></h2>
+</div>
+
+<!-- Task 7 -->
+<div class="bg-white p-5 rounded-lg shadow mb-5">
+<h2 class="text-xl font-bold mb-3">Task 7 - Full Name</h2>
+
+<input
+id="firstName"
+type="text"
+placeholder="First Name"
+class="border p-2 rounded w-full mb-3"
+/>
+
+<input
+id="lastName"
+type="text"
+placeholder="Last Name"
+class="border p-2 rounded w-full mb-3"
+/>
+
+<button
+onclick="showFullName()"
+class="bg-blue-500 text-white px-4 py-2 rounded"
+>
+Show Full Name
+</button>
+
+<h2 id="fullNameResult" class="mt-3 text-green-600 font-bold"></h2>
+</div>
+
+<!-- Task 8 -->
+<div class="bg-white p-5 rounded-lg shadow mb-5">
+<h2 class="text-xl font-bold mb-3">Task 8 - Change Image</h2>
+
+<img
+id="image"
+src="../Day12/assets/new.png"
+class=" w-64 h-64 rounded mb-3"
+/>
+
+<button
+onclick="changeImage()"
+class="bg-orange-500 text-white px-4 py-2 rounded"
+>
+Change Image
+</button>
+</div>
+
+<!-- Task 9 -->
+<div class="bg-white p-5 rounded-lg shadow mb-5">
+<h2 class="text-xl font-bold mb-3">Task 9 - Change Heading</h2>
+
+<h2 id="heading" class="text-2xl font-bold">
+Hello Bala
+</h2>
+
+<button
+onclick="changeHeading()"
+class="bg-pink-500 text-white px-4 py-2 rounded mt-3"
+>
+Change Heading
+</button>
+</div>
+
+<!-- Task 10 -->
+<div class="bg-white p-5 rounded-lg shadow mb-5">
+<h2 class="text-xl font-bold mb-3">Task 10 - Form Validation</h2>
+
+<input
+id="valueInput"
+type="text"
+placeholder="Enter Value"
+class="border p-2 rounded w-full mb-3"
+/>
+
+<button
+onclick="submitForm()"
+class="bg-blue-500 text-white px-4 py-2 rounded"
+>
+Submit
+</button>
+
+<h2 id="formResult" class="mt-3 font-bold"></h2>
+</div>
+
+<!-- Task 11 -->
+<div class="bg-white p-5 rounded-lg shadow mb-5">
+<h2 class="text-xl font-bold mb-3">Task 11 - Counter</h2>
+
+<button
+onclick="increaseCounter()"
+class="bg-green-500 text-white px-4 py-2 rounded"
+>
+Click Me
+</button>
+
+<h2 id="counterResult" class="mt-3 text-2xl font-bold">
+0
+</h2>
+</div>
+
+<script>
+
+// Task 1
+function showHero() {
+let hero = document.getElementById("heroInput").value;
+document.getElementById("heroResult").innerText = hero;
+}
+
+// Task 2
+function hideParagraph() {
+document.getElementById("hidePara").style.display = "none";
+}
+
+// Task 3
+function showParagraph() {
+document.getElementById("showPara").style.display = "block";
+}
+
+// Task 4
+function toggleParagraph() {
+document.getElementById("togglePara").classList.toggle("hidden");
+}
+
+// Task 5
+function checkUser() {
+let user = document.getElementById("username").value;
+
+if (user === "admin") {
+document.getElementById("userResult").innerText = "Login Success";
+} else {
+document.getElementById("userResult").innerText = "Invalid User";
+}
+}
+
+// Task 6
+function checkPassword() {
+let pass = document.getElementById("password").value;
+
+if (pass.length >= 8) {
+document.getElementById("passwordResult").innerText = "Strong Password";
+} else {
+document.getElementById("passwordResult").innerText = "Weak Password";
+}
+}
+
+// Task 7
+function showFullName() {
+let first = document.getElementById("firstName").value;
+let last = document.getElementById("lastName").value;
+
+document.getElementById("fullNameResult").innerText =
+first + " " + last;
+}
+
+// Task 8
+function changeImage() {
+document.getElementById("image").src =
+"../Day12/assets/1.png";
+}
+
+// Task 9
+function changeHeading() {
+let heading = document.getElementById("heading");
+
+heading.innerText = "Welcome Bala";
+heading.style.color = "red";
+}
+
+// Task 10
+function submitForm() {
+let value = document.getElementById("valueInput").value;
+
+if (value === "") {
+document.getElementById("formResult").innerText =
+"Please Enter Value";
+} else {
+document.getElementById("formResult").innerText =
+"Form Submitted";
+}
+}
+
+// Task 11
+let count = 0;
+
+function increaseCounter() {
+count++;
+document.getElementById("counterResult").innerText = count;
+}
+
+</script>
+
+</body>
+</html>
+
