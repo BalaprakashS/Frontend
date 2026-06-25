@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+</head>
+<body>
+
+    <h2>Register Form</h2>
+
+    <label>Name:</label>
+    <input type="text" id="name"><br><br>
+
+    <label>Email:</label>
+    <input type="email" id="email"><br><br>
+
+    <label>Age:</label>
+    <input type="number" id="age"><br><br>
+
+    <button onclick="register()">Register</button>
+
+    <script>
+        // Array to store users
+        const users = [];
+
+        function register() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let age = document.getElementById("age").value;
+
+            // Create object
+            let user = {
+                name: name,
+                email: email,
+                age: Number(age)
+            };
+
+            // Insert object into array
+            users.push(user);
+
+            console.log(users);
+
+            // Clear input fields
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("age").value = "";
+        }
+    </script>
+
+</body>
+</html>
