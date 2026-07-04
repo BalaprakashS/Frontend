@@ -1,0 +1,75 @@
+1. Callback
+
+A callback is a function passed as an argument to another function. It is executed after another function finishes its work.
+Callback is used to execute a function after another function completes.
+
+Example:
+
+function display(callback) {
+    console.log("Learning JavaScript");
+    callback();
+}
+
+function message() {
+    console.log("Callback Executed");
+}
+
+display(message);
+
+2. Promise
+
+A Promise is an object that handles asynchronous operations. It helps avoid callback hell and makes code easier to manage.
+Promise is used to solve callback hell and handle asynchronous operations efficiently.
+
+Example:
+let promise = new Promise((resolve, reject) => {
+    let success = true;
+
+    if (success) {
+        resolve("Task Completed");
+    } else {
+        reject("Task Failed");
+    }
+});
+
+promise
+    .then(result => console.log(result))
+    .catch(error => console.log(error));
+
+3. Async Await
+
+Async Await is built on Promises. It makes asynchronous code look like synchronous code, making it easier to read and write.
+Async Await makes Promise code cleaner, simpler, and easier to understand.
+
+Example:
+function getData() {
+    return new Promise(resolve => {
+        resolve("Data Loaded");
+    });
+}
+
+async function showData() {
+    let result = await getData();
+    console.log(result);
+}
+
+showData();
+
+4. Fetch
+
+Fetch is a JavaScript method used to send and receive data asynchronously.
+Fetch is used to communicate with APIs and retrieve or send data to a server.
+
+Example:
+function getStudent() {
+    return Promise.resolve({
+        id: 1,
+        name: "Bala",
+        course: "React"
+    });
+}
+
+getStudent().then(data => {
+    console.log(data);
+});
+

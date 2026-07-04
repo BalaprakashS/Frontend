@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript DOM Tasks</title>
+</head>
+<body>
+
+<h1>JavaScript DOM Tasks</h1>
+
+<hr>
+
+<h2>Task 1 - Character Counter</h2>
+<textarea id="textArea" rows="4" cols="40"></textarea>
+<p id="count">Total Characters : 0</p>
+
+<hr>
+
+<h2>Task 2 - Age Category Checker</h2>
+<input type="number" id="age" placeholder="Enter Age">
+<button onclick="checkAge()">Check</button>
+<p id="ageResult"></p>
+
+<hr>
+
+<h2>Task 3 - Dark Mode / Light Mode</h2>
+<button id="themeBtn" onclick="toggleTheme()">Dark Mode</button>
+
+<hr>
+
+<h2>Task 4 - Movie Ticket Calculator</h2>
+<input type="number" id="tickets" placeholder="Ticket Count">
+<button onclick="ticketCalc()">Calculate</button>
+<p id="ticketResult"></p>
+
+<hr>
+
+<h2>Task 5 - Profile Card Generator</h2>
+<input type="text" id="pname" placeholder="Name"><br><br>
+<input type="text" id="role" placeholder="Role"><br><br>
+<input type="text" id="company" placeholder="Company"><br><br>
+<button onclick="profileCard()">Generate</button>
+
+<div id="profile"></div>
+
+<hr>
+
+<h2>Task 6 - Search Hero</h2>
+<input type="text" id="hero" placeholder="Hero Name">
+<button onclick="searchHero()">Search</button>
+<p id="heroResult"></p>
+
+<hr>
+
+<h2>Task 7 - Lucky Number Checker</h2>
+<input type="number" id="luck">
+<button onclick="checkLucky()">Check</button>
+<p id="luckResult"></p>
+
+<hr>
+
+<h2>Task 8 - Product Price Calculator</h2>
+<input type="text" id="product" placeholder="Product Name"><br><br>
+<input type="number" id="qty" placeholder="Quantity"><br><br>
+<input type="number" id="price" placeholder="Price"><br><br>
+<button onclick="productCalc()">Calculate</button>
+<div id="productResult"></div>
+
+<hr>
+
+<h2>Task 9 - Random Quote Generator</h2>
+<button onclick="randomQuote()">Generate Quote</button>
+<p id="quote"></p>
+
+<hr>
+
+<h2>Task 10 - Student ID Generator</h2>
+<input type="text" id="studentName" placeholder="Student Name"><br><br>
+<input type="text" id="course" placeholder="Course"><br><br>
+<button onclick="studentCard()">Generate</button>
+
+<div id="student"></div>
+
+<hr>
+
+<h2>Bonus Task - Mini ATM</h2>
+
+<input type="number" id="amount" placeholder="Amount">
+
+<button onclick="deposit()">Deposit</button>
+
+<button onclick="withdraw()">Withdraw</button>
+
+<button onclick="balanceCheck()">Check Balance</button>
+
+<p id="balanceResult"></p>
+
+<script>
+
+// Task 1
+document.getElementById("textArea").addEventListener("input", function () {
+    document.getElementById("count").innerText =
+        "Total Characters : " + this.value.length;
+});
+
+// Task 2
+function checkAge() {
+    let age = Number(document.getElementById("age").value);
+
+    if (age <= 12)
+        document.getElementById("ageResult").innerText = "Child";
+    else if (age <= 19)
+        document.getElementById("ageResult").innerText = "Teenager";
+    else if (age <= 59)
+        document.getElementById("ageResult").innerText = "Adult";
+    else
+        document.getElementById("ageResult").innerText = "Senior Citizen";
+}
+
+// Task 3
+let dark = false;
+
+function toggleTheme() {
+    if (!dark) {
+        document.body.style.background = "black";
+        document.body.style.color = "white";
+        document.getElementById("themeBtn").innerText = "Light Mode";
+    } else {
+        document.body.style.background = "white";
+        document.body.style.color = "black";
+        document.getElementById("themeBtn").innerText = "Dark Mode";
+    }
+    dark = !dark;
+}
+
+// Task 4
+function ticketCalc() {
+    let total = Number(document.getElementById("tickets").value) * 150;
+    document.getElementById("ticketResult").innerText =
+        "Total Amount : ₹" + total;
+}
+
+// Task 5
+function profileCard() {
+    let name = document.getElementById("pname").value;
+    let role = document.getElementById("role").value;
+    let company = document.getElementById("company").value;
+
+    document.getElementById("profile").innerHTML =
+        "<h3>" + name + "</h3>" +
+        "<p>Role : " + role + "</p>" +
+        "<p>Company : " + company + "</p>";
+}
+
+// Task 6
+let heroes = ["Vijay", "Ajith", "Suriya", "SK", "Dhanush"];
+
+function searchHero() {
+    let hero = document.getElementById("hero").value;
+
+    if (heroes.includes(hero))
+        document.getElementById("heroResult").innerText = "Found";
+    else
+        document.getElementById("heroResult").innerText = "Not Found";
+}
+
+// Task 7
+let lucky = [7, 14, 21, 28];
+
+function checkLucky() {
+    let num = Number(document.getElementById("luck").value);
+
+    if (lucky.includes(num))
+        document.getElementById("luckResult").innerText = "Lucky Number";
+    else
+        document.getElementById("luckResult").innerText = "Normal Number";
+}
+
+// Task 8
+function productCalc() {
+    let product = document.getElementById("product").value;
+    let qty = Number(document.getElementById("qty").value);
+    let price = Number(document.getElementById("price").value);
+
+    document.getElementById("productResult").innerHTML =
+        "Product : " + product + "<br>" +
+        "Quantity : " + qty + "<br>" +
+        "Total : ₹" + (qty * price);
+}
+
+// Task 9
+let quotes = [
+    "Success comes from hard work.",
+    "Believe in yourself.",
+    "Practice makes perfect.",
+    "Never stop learning.",
+    "Dream big."
+];
+
+function randomQuote() {
+    let index = Math.floor(Math.random() * quotes.length);
+    document.getElementById("quote").innerText = quotes[index];
+}
+
+// Task 10
+let id = 1001;
+
+function studentCard() {
+    let name = document.getElementById("studentName").value;
+    let course = document.getElementById("course").value;
+
+    document.getElementById("student").innerHTML =
+        "<h3>ID : STU" + id++ + "</h3>" +
+        "<p>Name : " + name + "</p>" +
+        "<p>Course : " + course + "</p>";
+}
+
+// Bonus ATM
+let balance = 1000;
+
+function deposit() {
+    balance += Number(document.getElementById("amount").value);
+    balanceCheck();
+}
+
+function withdraw() {
+    let amt = Number(document.getElementById("amount").value);
+
+    if (amt <= balance)
+        balance -= amt;
+    else
+        alert("Insufficient Balance");
+
+    balanceCheck();
+}
+
+function balanceCheck() {
+    document.getElementById("balanceResult").innerText =
+        "Balance : ₹" + balance;
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tasks</title>
+</head>
+
+<body style="font-family:Arial;background:#f4f4f4;padding:20px;">
+
+    <h1 style="text-align:center;">JavaScript Assignment</h1>
+
+    <!-- ================= Task 1 ================= -->
+
+    <div style="background:white;padding:20px;border-radius:10px;margin-bottom:20px;">
+
+        <h2>Task 1 - Student Grade</h2>
+
+        <input type="number"
+            id="mark"
+            placeholder="Enter Mark"
+            style="padding:10px;width:250px;">
+
+        <br><br>
+
+        <button onclick="grade()"
+            style="padding:10px 20px;">
+            Calculate Grade
+        </button>
+
+        <h3 id="gradeResult"></h3>
+
+    </div>
+
+    <!-- ================= Task 2 ================= -->
+
+    <div style="background:white;padding:20px;border-radius:10px;margin-bottom:20px;">
+
+        <h2>Task 2 - Even or Odd</h2>
+
+        <input type="number"
+            id="number"
+            placeholder="Enter Number"
+            style="padding:10px;width:250px;">
+
+        <br><br>
+
+        <button onclick="evenOdd()"
+            style="padding:10px 20px;">
+            Check
+        </button>
+
+        <h3 id="evenResult"></h3>
+
+    </div>
+
+    <!-- ================= Task 3 ================= -->
+
+    <div style="background:white;padding:20px;border-radius:10px;margin-bottom:20px;">
+
+        <h2>Task 3 - Sum of Array</h2>
+
+        <button onclick="sumArray()"
+            style="padding:10px 20px;">
+            Calculate
+        </button>
+
+        <h3 id="sumResult"></h3>
+
+    </div>
+
+    <!-- ================= Task 4 ================= -->
+
+    <div style="background:white;padding:20px;border-radius:10px;margin-bottom:20px;">
+
+        <h2>Task 4 - Highest Collection</h2>
+
+        <button onclick="highestCollection()"
+            style="padding:10px 20px;">
+            Find Highest
+        </button>
+
+        <h3 id="collectionResult"></h3>
+
+    </div>
+
+    <!-- ================= Task 5 ================= -->
+
+    <div style="background:white;padding:20px;border-radius:10px;margin-bottom:20px;">
+
+        <h2>Task 5 - User Login</h2>
+
+        <input type="email"
+            id="loginEmail"
+            placeholder="Enter Email"
+            style="padding:10px;width:250px;">
+
+        <br><br>
+
+        <input type="password"
+            id="loginPassword"
+            placeholder="Enter Password"
+            style="padding:10px;width:250px;">
+
+        <br><br>
+
+        <button onclick="loginArray()"
+            style="padding:10px 20px;">
+            Login
+        </button>
+
+        <h3 id="loginResult"></h3>
+
+    </div>
+
+<script>
+
+//================ Task 1 =================
+
+function grade(){
+
+    let mark=Number(document.getElementById("mark").value);
+
+    if(mark>=90){
+
+        document.getElementById("gradeResult").innerText="Grade A";
+
+    }
+
+    else if(mark>=80){
+
+        document.getElementById("gradeResult").innerText="Grade B";
+
+    }
+
+    else if(mark>=70){
+
+        document.getElementById("gradeResult").innerText="Grade C";
+
+    }
+
+    else if(mark>=60){
+
+        document.getElementById("gradeResult").innerText="Grade D";
+
+    }
+
+    else{
+
+        document.getElementById("gradeResult").innerText="Fail";
+
+    }
+
+}
+
+//================ Task 2 =================
+
+function evenOdd(){
+
+    let num=Number(document.getElementById("number").value);
+
+    if(num%2==0){
+
+        document.getElementById("evenResult").innerText="Even";
+
+    }
+
+    else{
+
+        document.getElementById("evenResult").innerText="Odd";
+
+    }
+
+}
+
+//================ Task 3 =================
+
+function sumArray(){
+
+    let marks=[80,90,70,60,85];
+
+    let total=0;
+
+    for(let i=0;i<marks.length;i++){
+
+        total+=marks[i];
+
+    }
+
+    let average=total/marks.length;
+
+    document.getElementById("sumResult").innerHTML=
+
+    "Marks : "+marks+
+
+    "<br>Total : "+total+
+
+    "<br>Average : "+average;
+
+}
+
+//================ Task 4 =================
+
+function highestCollection(){
+
+    let collections=[150,300,250,500,450];
+
+    let highest=collections[0];
+
+    let index=0;
+
+    for(let i=1;i<collections.length;i++){
+
+        if(collections[i]>highest){
+
+            highest=collections[i];
+
+            index=i;
+
+        }
+
+    }
+
+    document.getElementById("collectionResult").innerHTML=
+
+    "Highest Collection : "+highest+
+
+    "<br>Movie Index : "+index;
+
+}
+
+//================ Task 5 =================
+
+let users=[
+
+{
+
+name:"Bala",
+
+email:"bala@gmail.com",
+
+password:"123"
+
+},
+
+{
+
+name:"Hari",
+
+email:"hari@gmail.com",
+
+password:"456"
+
+},
+
+{
+
+name:"Sudhan",
+
+email:"sudhan@gmail.com",
+
+password:"789"
+
+}
+
+];
+
+function loginArray(){
+
+    let email=document.getElementById("loginEmail").value;
+
+    let password=document.getElementById("loginPassword").value;
+
+    let found=false;
+
+    for(let i=0;i<users.length;i++){
+
+        if(users[i].email==email && users[i].password==password){
+
+            found=true;
+
+            break;
+
+        }
+
+    }
+
+    if(found){
+
+        document.getElementById("loginResult").innerText="Login Successful";
+
+    }
+
+    else{
+
+        document.getElementById("loginResult").innerText="Invalid Login";
+
+    }
+
+}
+
+//================ Task 6 =================
+
+function welcome(){
+
+    let name=document.getElementById("welcomeName").value;
+
+    document.getElementById("welcomeResult").innerText="Welcome "+name;
+
+}
+
+//================ Task 7 =================
+
+function adminLogin(){
+
+    let username=document.getElementById("adminUser").value;
+
+    let password=document.getElementById("adminPass").value;
+
+    if(username=="admin" && password=="12345"){
+
+        document.getElementById("adminResult").innerText="Login Success";
+
+    }
+
+    else{
+
+        document.getElementById("adminResult").innerText="Invalid Login";
+
+    }
+
+}
+
+//================ Task 8 =================
+
+function hidePara(){
+
+    document.getElementById("paragraph").style.display="none";
+
+}
+
+function showPara(){
+
+    document.getElementById("paragraph").style.display="block";
+
+}
+
+//================ Task 9 =================
+
+function changeTheme(){
+
+    document.body.style.background="black";
+
+    document.body.style.color="white";
+
+    document.getElementById("themeHeading").style.color="yellow";
+
+}
+
+//================ Task 10 =================
+
+function register(){
+
+    let name=document.getElementById("regName").value;
+
+    let email=document.getElementById("regEmail").value;
+
+    let age=document.getElementById("regAge").value;
+
+    document.getElementById("card").innerHTML=
+
+    "<h3>Name : "+name+"</h3>"+
+
+    "<h3>Email : "+email+"</h3>"+
+
+    "<h3>Age : "+age+"</h3>";
+
+}
+
+//================ Bonus =================
+
+let registerUsers=[];
+
+function bonusRegister(){
+
+    let user={
+
+        name:document.getElementById("bonusName").value,
+
+        email:document.getElementById("bonusEmail").value,
+
+        password:document.getElementById("bonusPassword").value
+
+    };
+
+    registerUsers.push(user);
+
+    document.getElementById("bonusResult").innerText="Registration Successful";
+
+}
+
+function bonusLogin(){
+
+    let email=document.getElementById("bonusLoginEmail").value;
+
+    let password=document.getElementById("bonusLoginPassword").value;
+
+    let found=false;
+
+    let username="";
+
+    for(let i=0;i<registerUsers.length;i++){
+
+        if(registerUsers[i].email==email &&
+           registerUsers[i].password==password){
+
+            found=true;
+
+            username=registerUsers[i].name;
+
+            break;
+
+        }
+
+    }
+
+    if(found){
+
+        document.getElementById("bonusResult").innerText="Welcome "+username;
+
+    }
+
+    else{
+
+        document.getElementById("bonusResult").innerText="Invalid Login";
+
+    }
+
+}
+
+function logout(){
+
+    document.getElementById("bonusResult").innerText="Logout Successful";
+
+}
+
+</script>
+
+<!-- ================= Task 6 ================= -->
+
+<div style="background:white;padding:20px;border-radius:10px;margin-bottom:20px;">
+
+<h2>Task 6 - Welcome Message</h2>
+
+<input type="text"
+id="welcomeName"
+placeholder="Enter Name"
+style="padding:10px;width:250px;">
+
+<br><br>
+
+<button onclick="welcome()" style="padding:10px 20px;">
+Show
+</button>
+
+<h3 id="welcomeResult"></h3>
+
+</div>
+
+<!-- ================= Task 7 ================= -->
+
+<div style="background:white;padding:20px;border-radius:10px;margin-bottom:20px;">
+
+<h2>Task 7 - Login Validation</h2>
+
+<input type="text"
+id="adminUser"
+placeholder="Username"
+style="padding:10px;width:250px;">
+
+<br><br>
+
+<input type="password"
+id="adminPass"
+placeholder="Password"
+style="padding:10px;width:250px;">
+
+<br><br>
+
+<button onclick="adminLogin()" style="padding:10px 20px;">
+Login
+</button>
+
+<h3 id="adminResult"></h3>
+
+</div>
+
+<!-- ================= Task 8 ================= -->
+
+<div style="background:white;padding:20px;border-radius:10px;margin-bottom:20px;">
+
+<h2>Task 8 - Hide & Show</h2>
+
+<p id="paragraph">
+JavaScript DOM makes web pages interactive.
+</p>
+
+<button onclick="hidePara()" style="padding:10px 20px;">
+Hide
+</button>
+
+<button onclick="showPara()" style="padding:10px 20px;">
+Show
+</button>
+
+</div>
+
+<!-- ================= Task 9 ================= -->
+
+<div style="background:white;padding:20px;border-radius:10px;margin-bottom:20px;">
+
+<h2 id="themeHeading">Task 9 - Theme Changer</h2>
+
+<button onclick="changeTheme()" style="padding:10px 20px;">
+Change Theme
+</button>
+
+</div>
+
+<!-- ================= Task 10 ================= -->
+
+<div style="background:white;padding:20px;border-radius:10px;margin-bottom:20px;">
+
+<h2>Task 10 - Register & Display</h2>
+
+<input type="text"
+id="regName"
+placeholder="Name"
+style="padding:10px;width:250px;">
+
+<br><br>
+
+<input type="email"
+id="regEmail"
+placeholder="Email"
+style="padding:10px;width:250px;">
+
+<br><br>
+
+<input type="number"
+id="regAge"
+placeholder="Age"
+style="padding:10px;width:250px;">
+
+<br><br>
+
+<button onclick="register()" style="padding:10px 20px;">
+Register
+</button>
+
+<div id="card"
+style="margin-top:20px;padding:15px;background:#eeeeee;border-radius:8px;">
+</div>
+
+</div>
+
+<!-- ================= Bonus ================= -->
+
+<div style="background:white;padding:20px;border-radius:10px;margin-bottom:20px;">
+
+<h2>Bonus Challenge</h2>
+
+<h3>Register</h3>
+
+<input type="text"
+id="bonusName"
+placeholder="Name"
+style="padding:10px;width:250px;">
+
+<br><br>
+
+<input type="email"
+id="bonusEmail"
+placeholder="Email"
+style="padding:10px;width:250px;">
+
+<br><br>
+
+<input type="password"
+id="bonusPassword"
+placeholder="Password"
+style="padding:10px;width:250px;">
+
+<br><br>
+
+<button onclick="bonusRegister()" style="padding:10px 20px;">
+Register
+</button>
+
+<hr>
+
+<h3>Login</h3>
+
+<input type="email"
+id="bonusLoginEmail"
+placeholder="Email"
+style="padding:10px;width:250px;">
+
+<br><br>
+
+<input type="password"
+id="bonusLoginPassword"
+placeholder="Password"
+style="padding:10px;width:250px;">
+
+<br><br>
+
+<button onclick="bonusLogin()" style="padding:10px 20px;">
+Login
+</button>
+
+<button onclick="logout()" style="padding:10px 20px;">
+Logout
+</button>
+
+<h3 id="bonusResult"></h3>
+
+</div>
+
+</body>
+
+</html>

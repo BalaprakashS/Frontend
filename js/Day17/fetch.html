@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+</head>
+<body>
+
+    <h2>Fetch API</h2>
+
+    <button onclick="getUsers()">Get Users</button>
+
+    <br><br>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+
+        <tbody id="tbody"></tbody>
+    </table>
+
+    <script>
+
+        // Array of Objects
+        let users = [];
+
+        async function getUsers() {
+
+            let response = await fetch("https://randomuser.me/api/?results=10&nat=in");
+
+            let data = await response.json();
+
+            users = data.results;
+
+            console.log(users);
+
+            let rows = "";
+
+            users.forEach(function(user, index) {
+
+                rows += `
+                    <tr>
+                        <td>${index + 1}</td>
+                        <td>
+                            <img src="${user.picture.medium}" width="60" height="60">
+                        </td>
+                        <td>${user.name.first} ${user.name.last}</td>
+                        <td>${user.login.username}</td>
+                        <td>${user.email}</td>
+                        <td>${user.location.city}</td>
+                    </tr>
+                `;
+
+            });
+
+            document.getElementById("tbody").innerHTML = rows;
+
+        }
+
+    </script>
+
+</body>
+</html>
